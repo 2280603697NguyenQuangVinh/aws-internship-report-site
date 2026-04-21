@@ -208,3 +208,4 @@ Language switching is available in the site navigation.
 - 📁 [GitHub Repository](https://github.com/2280603697NguyenQuangVinh/aws-internship-report-site)
 - 👥 [AWS FCJ Study Group (Facebook)](https://www.facebook.com/groups/awsstudygroupfcj/)
 - 🎨 [Hugo Theme Learn](https://github.com/matcornic/hugo-theme-learn)
+- Linkedin: https://www.linkedin.com/in/nguy%E1%BB%85n-quang-vinh-3687473bb/
