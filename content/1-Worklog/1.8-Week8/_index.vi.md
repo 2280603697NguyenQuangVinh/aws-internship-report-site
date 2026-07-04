@@ -9,51 +9,27 @@ pre: " <b> 1.8. </b> "
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
 
-
 ### Mục tiêu tuần 8:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tiếp tục tìm hiểu và thực hành các dịch vụ AWS cốt lõi theo nội dung học tập của tuần.
+* Phát triển và hoàn thiện các công việc dự án nhóm, phối hợp với các thành viên để triển khai chức năng.
+* Kiểm thử, rà soát và đồng bộ các phần đã phát triển trong tuần.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | ------------ | --------------- | --------------- |
+| Thứ 2 | Phát triển Backend: Hoàn thiện các API còn lại. Xây dựng chức năng lưu trữ dữ liệu người dùng. | 07/06/2026 | 07/06/2026 | GitHub |
+| Thứ 3 | Hoàn thiện xử lý nghiệp vụ quét rác bằng AI Camera. Tích hợp các dịch vụ AWS vào hệ thống backend. | 08/06/2026 | 08/06/2026 | GitHub / AWS |
+| Thứ 4 | Phát triển Frontend: Hoàn thiện màn hình chính, luồng trải nghiệm người dùng (tạo hồ sơ -> AI Camera). Tối ưu giao diện. | 09/06/2026 | 09/06/2026 | GitHub / Figma |
+| Thứ 5 | Kết nối và kiểm thử toàn bộ các API. Kiểm thử luồng hoạt động giữa frontend và backend. | 10/06/2026 | 10/06/2026 | GitHub |
+| Thứ 6 | Xử lý lỗi phát sinh trong quá trình tích hợp. Họp nhóm cập nhật tiến độ. Cập nhật tài liệu kỹ thuật. | 11/06/2026 | 11/06/2026 | GitHub / Jira |
+| Thứ 7 | Tổng kết tuần 8: Kiểm thử tổng thể luồng tích hợp frontend - backend. Rà soát và xử lý các lỗi còn tồn đọng, cập nhật tài liệu kỹ thuật, chuẩn bị cho giai đoạn phát triển Mini Game. | 12/06/2026 | 12/06/2026 | GitHub / Jira |
+| Chủ Nhật |  |  |  |  |
 
 ### Kết quả đạt được tuần 8:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Sử dụng GitHub/Git và Jira để quản lý mã nguồn, phối hợp nhóm và cập nhật tiến độ công việc.
+* Hoàn thiện thiết kế giao diện và cải thiện trải nghiệm người dùng cho dự án.
+* Kiểm thử tích hợp frontend-backend và xử lý lỗi giúp đảm bảo luồng hoạt động mượt mà.
+* Hoàn thành phần Mini Game, bao gồm API, giao diện và kiểm thử trải nghiệm chơi game.
+* Tổng kết, rà soát lại nội dung đã học và chuẩn bị kế hoạch cho tuần tiếp theo.

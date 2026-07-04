@@ -9,50 +9,27 @@ pre: " <b> 1.6. </b> "
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
 
-
 ### Mục tiêu tuần 6:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tiếp tục tìm hiểu và thực hành các dịch vụ AWS cốt lõi theo nội dung học tập của tuần.
+* Phát triển và hoàn thiện các công việc dự án nhóm, phối hợp với các thành viên để triển khai chức năng.
+* Kiểm thử, rà soát và đồng bộ các phần đã phát triển trong tuần.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | ------------ | --------------- | --------------- |
+| Thứ 2 | Ôn tập EC2, S3 và IAM trên AWS Skill Builder. Tìm hiểu thêm về bảo mật và monitoring hệ thống trên AWS. | 24/05/2026 | 24/05/2026 | AWS Skill Builder |
+| Thứ 3 | Phát triển project: Hoàn thành giao diện UI ban đầu. Thiết kế nhân vật và giao diện chính. Xây dựng bố cục và trải nghiệm người dùng. | 25/05/2026 | 25/05/2026 | GitHub / Figma |
+| Thứ 4 | Phát triển backend: Hoàn thành chức năng hồ sơ người dùng. Xây dựng chức năng thêm dữ liệu và xử lý event. | 26/05/2026 | 26/05/2026 | GitHub |
+| Thứ 5 | Thiết kế và xử lý các API phục vụ frontend. Theo dõi tiến độ công việc của từng thành viên. | 27/05/2026 | 27/05/2026 | GitHub |
+| Thứ 6 | Kiểm tra và đồng bộ source code giữa frontend và backend. Thảo luận cải tiến giao diện và chức năng hệ thống. | 28/05/2026 | 28/05/2026 | GitHub |
+| Thứ 7 | Tổng kết tuần 6: Kiểm tra lại toàn bộ giao diện UI đã hoàn thành và các API backend đã xây dựng. Ghi nhận các điểm cần cải thiện và lên kế hoạch cho tuần 7. | 29/05/2026 | 29/05/2026 | GitHub / Figma |
+| Chủ Nhật |  |  |  |  |
 
 ### Kết quả đạt được tuần 6:
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Nắm vững cách triển khai và quản lý EC2, đồng thời hiểu rõ quy trình cấu hình SSH và môi trường cho instance.
+* Thực hành lưu trữ object với S3, quản lý truy cập bucket và nâng cao hiểu biết về bảo mật dữ liệu.
+* Hiểu rõ về IAM: tạo user, role, policy và sử dụng access key để kết nối AWS CLI.
+* Hoàn thành nhiều bài lab AWS Skill Builder giúp củng cố thực hành dịch vụ.
+* Tiếp nhận và hoàn thiện nhiệm vụ dự án nhóm, gồm phân tích nghiệp vụ, thiết kế kiến trúc và xây dựng tính năng.
