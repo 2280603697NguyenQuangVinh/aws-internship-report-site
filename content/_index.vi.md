@@ -7,21 +7,21 @@ chapter: false
 
 # Báo cáo thực tập
 ### Thông tin sinh viên:
-&emsp; **Họ và tên:** Đào Hữu Tiến
+&emsp; **Họ và tên:** Nguyễn Quang Vinh
 
-&emsp; **Số điện thoại:** 0911384693
+&emsp; **Số điện thoại:** 0777588621
 
-&emsp; **Email:** daohuutien2004@gmail.com
+&emsp; **Email:** ngquangvinh1410.04@gmail.com
 
 &emsp; **Trường:** Trường Đại Học Công Nghệ TP.HCM
 
 &emsp; **Ngành:** Công nghệ thông tin
 
-&emsp; **Lớp:** 22DTHE7
+&emsp; **Lớp:** 22DTHJA2
 
-&emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Vietnam
+&emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Vietnam 
 
-&emsp; **Vị trí thực tập:** FCJ Cloud Intern
+&emsp; **Vị trí thực tập:** Workforce Bootcamp - First Cloud AI Journey
 
 &emsp; **Thời gian thực tập:** Từ ngày 17/04/2026 đến ngày 10/07/2026
 

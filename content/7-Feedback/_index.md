@@ -15,33 +15,34 @@ pre: " <b> 7. </b> "
 ### Overall Evaluation
 
 **1. Working Environment**  
-The working environment is very friendly and open. FCJ members are always willing to help whenever I have difficulties, even outside working hours. The workspace is tidy, clean, and very comfortable, which helps me stay focused. However, because there were so many students participating in the FCJ program this time, I felt a bit disappointed that I could not join more events organized by the admin team, such as community days that shared a lot of useful knowledge—not only technical knowledge but also soft skills from experienced IT professionals. Additionally, learning from friends who participated in marathon competitions gave me many valuable insights.
+The working environment was very friendly and open. Everyone at FCAJ was always willing to help whenever I encountered difficulties, even outside working hours. The workspace was clean, organized, and comfortable, which helped me stay focused.
+However, because there were so many interns participating in the program this time, I felt a little disappointed that I couldn't join more of the events organized by the admins. The Community Day sessions were especially valuable, as they provided not only technical knowledge but also practical soft skills shared by experienced professionals from different areas of the IT industry. In addition, listening to participants who had joined hackathons and programming competitions gave me valuable insights and lessons that I can apply in my own learning and career.
 
 **2. Support from Mentor / Team Admin**  
-The mentor guided me in great detail, explained clearly when I didn't understand, and always encouraged me to ask questions. The admin team supported paperwork, documentation, and created favorable conditions for me to work effectively, giving very helpful feedback that contributed greatly to each group's topic. I am very grateful to the mentor for letting me try solving problems myself instead of only giving answers. I also want to thank the admin team for patiently supporting the students throughout the program.
+My mentor provided detailed guidance, explained concepts clearly whenever I had questions, and always encouraged me to ask whenever I was unsure. The admin team also offered excellent support with administrative procedures, documentation, and everything needed to ensure a smooth internship experience. Their constructive feedback contributed significantly to the progress of each project.
+I am especially grateful to my mentor for allowing me to explore solutions and solve problems independently instead of simply providing the answers. I would also like to sincerely thank the admin team for their patience and continuous support throughout the entire internship program.
 
 **3. Relevance of Work to Academic Major**  
-The tasks assigned to me matched the knowledge I learned at university, while also expanding into new areas I had never encountered before. As a result, I both strengthened my foundational knowledge and learned practical skills.
+The tasks assigned to me were closely related to what I had learned at university while also exposing me to new technologies and areas that I had never experienced before. This allowed me to strengthen my academic foundation while developing practical skills through real-world projects.
 
 **4. Learning & Skill Development Opportunities**  
-During the internship, I learned many new skills such as using project management tools, teamwork skills, and professional communication in a corporate environment. The mentor also shared many real-world experiences that helped me better orient my career path. Through the sharing events, I also gained new perspectives on the IT industry and the opportunities it offers.
+During my internship, I learned many new skills, including project management tools, teamwork, and professional communication in a corporate environment. My mentor also shared valuable real-world experiences that helped me better understand my future career path. Through various sharing sessions and events, I gained broader perspectives on the IT industry and the opportunities it offers for the future.
 
 **5. Company Culture & Team Spirit**  
-The company culture is very positive: everyone respects one another, works seriously, but still maintains a friendly atmosphere. When there are urgent projects, everyone makes an effort and supports each other regardless of position. This made me feel like part of the team, even though I was an intern.
+The company culture was very positive. Everyone respected one another, worked professionally, and maintained a friendly atmosphere. Whenever there was an urgent project, everyone worked together and supported each other regardless of their position. This made me feel like I was truly part of the team, even as an intern.
 
 **6. Internship Policies / Benefits**  
-The company offers flexible working hours when needed. Additionally, having the opportunity to join internal training sessions is a big plus.
+The company provided flexible working arrangements whenever necessary. In addition, having the opportunity to participate in internal training sessions was a significant benefit that greatly enhanced my learning experience.
 
 
 ### Additional Questions
 - What did you find **most satisfying** during your internship?  
-The thing I was most satisfied with during the internship was the spirit of the people in the program. The admin team and mentors made the program very inspiring and energetic. The sense of unity throughout the program gave me strong motivation and a very positive working spirit.
+The thing I appreciated the most was the enthusiasm and passion of everyone involved in the program. The energy and dedication of the interns, mentors, and admin team created an inspiring and motivating environment. The strong sense of teamwork throughout the program encouraged me to stay motivated and maintain a positive attitude toward my work.
 - What do you think the company **should improve** for future interns?  
-I think the company should offer more events and community days so interns have more chances to listen and ask questions to improve their skills and knowledge. These activities do not have to be held only on weekends; they can take place on any weekday as well.
+I believe the company could organize more events and Community Day sessions so that interns would have more opportunities to learn from experienced professionals, ask questions, and improve both their technical knowledge and soft skills. These activities do not necessarily have to be held only on weekends—they could also take place on weekdays to provide more flexibility.
 - If recommending to a friend, would you **suggest they intern here**? Why or why not?  
-Of course I would recommend this internship to my friends. This is an excellent internship program, from the work environment to the support from admin and mentors, and the spirit it brings is very meaningful and should be known by more people.
+Absolutely. I would highly recommend this internship program to my friends because it provides an excellent working environment, outstanding support from mentors and the admin team, and an inspiring atmosphere that motivates interns to learn, grow, and develop both professionally and personally.
 
 ### Suggestions & Expectations
-- Do you have any suggestions to improve the internship experience?  
-- Would you like to continue this program in the future?  
-- Any other comments (free sharing):
+Would you like to continue this program in the future?
+Yes. If I have the opportunity, I would be very happy to continue participating in this program in the future. It has been a valuable learning experience that has helped me grow both technically and professionally.
