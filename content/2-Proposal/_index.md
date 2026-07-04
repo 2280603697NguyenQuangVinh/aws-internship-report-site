@@ -53,7 +53,7 @@ For implementation, the platform is intentionally designed to stay cost-consciou
 GreenLens Kids uses a serverless AWS architecture to support child accounts, AI image analysis, quiz generation, rewards, and progress tracking.
 
 ### High-Level Architecture
-
+![GreenLens Kids architecture diagram](/images/2-Proposal/greenlens-kids-architecture.png)
 ```mermaid
 flowchart LR
   child[Child / Parent User] --> web[React Web]
