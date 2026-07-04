@@ -11,105 +11,203 @@ pre: " <b> 2. </b> "
 
 In this section, you need to summarize the contents of the workshop that you **plan** to conduct.
 
-# IoT Weather Platform for Lab Research
-## A Unified AWS Serverless Solution for Real-Time Weather Monitoring
+# GreenLens Kids
+## AI Waste Learning Platform for Children
+### A Unified AWS Serverless Solution for Playful Environmental Education
 
-### 1. Executive Summary
-The IoT Weather Platform is designed for the ITea Lab team in Ho Chi Minh City to enhance weather data collection and analysis. It supports up to 5 weather stations, with potential scalability to 10-15, utilizing Raspberry Pi edge devices with ESP32 sensors to transmit data via MQTT. The platform leverages AWS Serverless services to deliver real-time monitoring, predictive analytics, and cost efficiency, with access restricted to 5 lab members via Amazon Cognito.
+## 1. Executive Summary
+GreenLens Kids is an educational platform that helps children learn how to classify waste through playful interaction, AI-powered feedback, quizzes, mini games, and rewards. The app is designed for children ages 6 to 12 and is centered around a child-friendly avatar identity, so learning feels like an adventure rather than a school exercise.
 
-### 2. Problem Statement
-### What’s the Problem?
-Current weather stations require manual data collection, becoming unmanageable with multiple units. There is no centralized system for real-time data or analytics, and third-party platforms are costly and overly complex.
+The platform combines a React web app, an Expo/React Native mobile app, and a .NET 8 backend with a planned AWS serverless architecture. Child progress is tracked through `childId`, while authentication and profile linkage can be handled silently through Amazon Cognito and DynamoDB. The result is a lightweight, scalable, and privacy-aware learning system that encourages repeated engagement and environmental habits over time.
+
+## 2. Problem Statement
+
+### What Is the Problem?
+Children often learn about environmental responsibility through abstract explanations that are hard to remember and even harder to apply in real life. Waste classification is a practical skill, but most learning materials are passive, text-heavy, or disconnected from everyday situations.
+
+At the same time, families and schools need a safe digital experience that is simple enough for children to use, but structured enough to track learning progress and rewards.
 
 ### The Solution
-The platform uses AWS IoT Core to ingest MQTT data, AWS Lambda and API Gateway for processing, Amazon S3 for storage (including a data lake), and AWS Glue Crawlers and ETL jobs to extract, transform, and load data from the S3 data lake to another S3 bucket for analysis. AWS Amplify with Next.js provides the web interface, and Amazon Cognito ensures secure access. Similar to Thingsboard and CoreIoT, users can register new devices and manage connections, though this platform operates on a smaller scale and is designed for private use. Key features include real-time dashboards, trend analysis, and low operational costs.
+GreenLens Kids solves this by turning waste classification into an interactive learning loop:
+
+- Create a child avatar and profile.
+- Scan waste with an AI Camera.
+- Receive instant classification and explanation.
+- Answer short quiz questions.
+- Play mini games to reinforce the lesson.
+- Earn XP, badges, streaks, and rewards.
+
+The platform uses AWS services such as API Gateway, Lambda, DynamoDB, Cognito, S3, Rekognition, and Bedrock to deliver real-time feedback with low operational overhead. AWS WAF, CloudWatch, and SNS can be added to improve protection, observability, and operational alerting.
 
 ### Benefits and Return on Investment
-The solution establishes a foundational resource for lab members to develop a larger IoT platform, serving as a study resource, and provides a data foundation for AI enthusiasts for model training or analysis. It reduces manual reporting for each station via a centralized platform, simplifying management and maintenance, and improves data reliability. Monthly costs are $0.66 USD per the AWS Pricing Calculator, with a 12-month total of $7.92 USD. All IoT equipment costs are covered by the existing weather station setup, eliminating additional development expenses. The break-even period of 6-12 months is achieved through significant time savings from reduced manual work.
+GreenLens Kids creates value in three ways:
 
-### 3. Solution Architecture
-The platform employs a serverless AWS architecture to manage data from 5 Raspberry Pi-based stations, scalable to 15. Data is ingested via AWS IoT Core, stored in an S3 data lake, and processed by AWS Glue Crawlers and ETL jobs to transform and load it into another S3 bucket for analysis. Lambda and API Gateway handle additional processing, while Amplify with Next.js hosts the dashboard, secured by Cognito. The architecture is detailed below:
+1. It improves environmental literacy through hands-on learning.
+2. It gives children a reusable learning journey that grows with their progress.
+3. It provides a foundation for future AI-assisted educational features, analytics, and content personalization.
 
-![IoT Weather Station Architecture](/images/2-Proposal/edge_architecture.jpeg)
+For implementation, the platform is intentionally designed to stay cost-conscious at small scale, especially during early development and pilot use. The main value comes from reusable software architecture, educational continuity, and the ability to expand the product over time without redesigning the core system.
 
-![IoT Weather Platform Architecture](/images/2-Proposal/platform_architecture.jpeg)
+## 3. Solution Architecture
+
+GreenLens Kids uses a serverless AWS architecture to support child accounts, AI image analysis, quiz generation, rewards, and progress tracking.
+
+### High-Level Architecture
+
+```mermaid
+flowchart LR
+  child[Child / Parent User] --> web[React Web]
+  child --> mobile[Expo Mobile]
+  web --> api[Amazon API Gateway]
+  mobile --> api
+  api --> auth[Amazon Cognito]
+  api --> lambdas[AWS Lambda .NET 8]
+  lambdas --> ddb[Amazon DynamoDB]
+  lambdas --> s3[Amazon S3]
+  lambdas --> rekognition[Amazon Rekognition]
+  lambdas --> bedrock[Amazon Bedrock]
+  lambdas --> cloudwatch[Amazon CloudWatch]
+  cloudwatch --> sns[Amazon SNS]
+```
 
 ### AWS Services Used
-- **AWS IoT Core**: Ingests MQTT data from 5 stations, scalable to 15.
-- **AWS Lambda**: Processes data and triggers Glue jobs (two functions).
-- **Amazon API Gateway**: Facilitates web app communication.
-- **Amazon S3**: Stores raw data in a data lake and processed outputs (two buckets).
-- **AWS Glue**: Crawlers catalog data, and ETL jobs transform and load it.
-- **AWS Amplify**: Hosts the Next.js web interface.
-- **Amazon Cognito**: Secures access for lab users.
+
+- **Amazon API Gateway**: exposes secure backend endpoints for auth, child profiles, AI Camera, quiz, and mini game flows.
+- **AWS Lambda**: runs business logic for profile creation, image analysis orchestration, quiz generation, and reward updates.
+- **Amazon Cognito**: manages user identity and token-based access.
+- **Amazon DynamoDB**: stores child profiles, progress, streaks, quiz sessions, classifications, and reward state.
+- **Amazon S3**: stores uploaded images, audio assets, static content, and generated resources.
+- **Amazon Rekognition**: analyzes waste images and returns labels for classification.
+- **Amazon Bedrock**: generates educational explanations and quiz content.
+- **AWS WAF**: protects public endpoints and helps limit abuse.
+- **Amazon CloudWatch**: captures logs, metrics, and alarms.
+- **Amazon SNS**: sends operational alerts when needed.
 
 ### Component Design
-- **Edge Devices**: Raspberry Pi collects and filters sensor data, sending it to IoT Core.
-- **Data Ingestion**: AWS IoT Core receives MQTT messages from the edge devices.
-- **Data Storage**: Raw data is stored in an S3 data lake; processed data is stored in another S3 bucket.
-- **Data Processing**: AWS Glue Crawlers catalog the data, and ETL jobs transform it for analysis.
-- **Web Interface**: AWS Amplify hosts a Next.js app for real-time dashboards and analytics.
-- **User Management**: Amazon Cognito manages user access, allowing up to 5 active accounts.
 
-### 4. Technical Implementation
-**Implementation Phases**
-This project has two parts—setting up weather edge stations and building the weather platform—each following 4 phases:
-- Build Theory and Draw Architecture: Research Raspberry Pi setup with ESP32 sensors and design the AWS serverless architecture (1 month pre-internship)
-- Calculate Price and Check Practicality: Use AWS Pricing Calculator to estimate costs and adjust if needed (Month 1).
-- Fix Architecture for Cost or Solution Fit: Tweak the design (e.g., optimize Lambda with Next.js) to stay cost-effective and usable (Month 2).
-- Develop, Test, and Deploy: Code the Raspberry Pi setup, AWS services with CDK/SDK, and Next.js app, then test and release to production (Months 2-3).
+- **Child Identity Layer**: creates an avatar-based identity instead of a traditional email/password flow.
+- **AI Camera Layer**: accepts an image, runs classification, and returns a friendly explanation of the result.
+- **Learning Layer**: transforms each classification into quiz questions and follow-up learning.
+- **Game Layer**: reinforces knowledge through mini games, XP, and rewards.
+- **Progress Layer**: tracks child history, streaks, badges, and completed activities.
 
-**Technical Requirements**
-- Weather Edge Station: Sensors (temperature, humidity, rainfall, wind speed), a microcontroller (ESP32), and a Raspberry Pi as the edge device. Raspberry Pi runs Raspbian, handles Docker for filtering, and sends 1 MB/day per station via MQTT over Wi-Fi.
-- Weather Platform: Practical knowledge of AWS Amplify (hosting Next.js), Lambda (minimal use due to Next.js), AWS Glue (ETL), S3 (two buckets), IoT Core (gateway and rules), and Cognito (5 users). Use AWS CDK/SDK to code interactions (e.g., IoT Core rules to S3). Next.js reduces Lambda workload for the fullstack web app.
+## 4. Technical Implementation
 
-### 5. Timeline & Milestones
-**Project Timeline**
-- Pre-Internship (Month 0): 1 month for planning and old station review.
-- Internship (Months 1-3): 3 months.
-    - Month 1: Study AWS and upgrade hardware.
-    - Month 2: Design and adjust architecture.
-    - Month 3: Implement, test, and launch.
-- Post-Launch: Up to 1 year for research.
+### Implementation Phases
+The project can be implemented in four phases:
 
-### 6. Budget Estimation
-You can find the budget estimation on the [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=621f38b12a1ef026842ba2ddfe46ff936ed4ab01).  
-Or you can download the [Budget Estimation File](../attachments/budget_estimation.pdf).
+1. **Product and Flow Design**  
+   Define the avatar creation flow, AI Camera experience, quiz logic, and reward loop.
 
-### Infrastructure Costs
-- AWS Services:
-    - AWS Lambda: $0.00/month (1,000 requests, 512 MB storage).
-    - S3 Standard: $0.15/month (6 GB, 2,100 requests, 1 GB scanned).
-    - Data Transfer: $0.02/month (1 GB inbound, 1 GB outbound).
-    - AWS Amplify: $0.35/month (256 MB, 500 ms requests).
-    - Amazon API Gateway: $0.01/month (2,000 requests).
-    - AWS Glue ETL Jobs: $0.02/month (2 DPUs).
-    - AWS Glue Crawlers: $0.07/month (1 crawler).
-    - MQTT (IoT Core): $0.08/month (5 devices, 45,000 messages).
+2. **Backend and Data Modeling**  
+   Build the .NET 8 backend, create DynamoDB schemas, and define Cognito-based user linkage.
 
-Total: $0.7/month, $8.40/12 months
+3. **AI and Content Integration**  
+   Connect Rekognition for image labels and Bedrock for educational explanations and quiz generation.
 
-- Hardware: $265 one-time (Raspberry Pi 5 and sensors).
+4. **Frontend, Testing, and Deployment**  
+   Implement the React web app and mobile app, test the end-to-end flow, and deploy the AWS resources.
 
-### 7. Risk Assessment
-#### Risk Matrix
-- Network Outages: Medium impact, medium probability.
-- Sensor Failures: High impact, low probability.
-- Cost Overruns: Medium impact, low probability.
+### Technical Requirements
 
-#### Mitigation Strategies
-- Network: Local storage on Raspberry Pi with Docker.
-- Sensors: Regular checks and spares.
-- Cost: AWS budget alerts and optimization.
+#### Child Profile and Avatar
+- Avatar-based onboarding with hair, eyes, outfit, and name selection.
+- A unique `childId` for progress tracking.
+- Silent identity linkage with Cognito when AWS mode is enabled.
 
-#### Contingency Plans
-- Revert to manual methods if AWS fails.
-- Use CloudFormation for cost-related rollbacks.
+#### AI Camera
+- Image upload or camera capture from web/mobile.
+- Waste classification using Rekognition.
+- Result screen with the waste category, explanation, and suggested action.
 
-### 8. Expected Outcomes
-#### Technical Improvements: 
-Real-time data and analytics replace manual processes.  
-Scalable to 10-15 stations.
-#### Long-term Value
-1-year data foundation for AI research.  
-Reusable for future projects.
+#### Quiz and Rewards
+- Short quizzes generated from the AI result or from prebuilt content.
+- XP, levels, streaks, badges, and reward progression.
+- Persistent learning history stored in DynamoDB.
+
+#### Backend and Infrastructure
+- .NET 8 API layer.
+- API Gateway and Lambda-based serverless endpoints.
+- DynamoDB for progress and content state.
+- S3 for media assets and temporary uploads.
+- Cognito for secure access.
+
+## 5. Timeline & Milestones
+
+### Project Timeline
+
+- **Phase 1: Planning and UX Design**
+  - Define learning goals, child journey, and core screens.
+  - Finalize feature scope for avatar, AI Camera, quiz, and rewards.
+
+- **Phase 2: Core Backend**
+  - Implement child profile creation and authentication linkage.
+  - Build storage and progress tracking in DynamoDB.
+
+- **Phase 3: AI Learning Loop**
+  - Integrate Rekognition and Bedrock.
+  - Implement quiz generation and result-based learning feedback.
+
+- **Phase 4: Frontend and Release**
+  - Complete the web and mobile experience.
+  - Run end-to-end testing, polish UX, and prepare deployment.
+
+## 6. Budget Estimation
+
+GreenLens Kids is designed to stay efficient at small scale. The biggest cost drivers will typically be:
+
+- API traffic through API Gateway
+- Lambda execution
+- DynamoDB reads and writes
+- S3 storage for uploads and assets
+- Rekognition and Bedrock usage for AI features
+
+For early development and pilot testing, the architecture should remain low-cost if usage is controlled and media assets are managed carefully. A final budget should be confirmed with the AWS Pricing Calculator once the expected number of users, image scans, and quiz generations is known.
+
+### Infrastructure Cost Considerations
+
+- **Low-traffic pilot**: likely dominated by AI calls and storage.
+- **Growth stage**: cost increases mainly with scans, quiz generation, and active users.
+- **Optimization opportunities**: caching content, limiting image retention, and using prebuilt quiz pools where appropriate.
+
+## 7. Risk Assessment
+
+### Risk Matrix
+
+- **AI Misclassification**: medium impact, medium probability.
+- **Child UX Confusion**: high impact, medium probability.
+- **Cost Growth from AI Usage**: medium impact, medium probability.
+- **Data Privacy and Compliance**: high impact, low-to-medium probability.
+- **Service Availability Issues**: medium impact, low probability.
+
+### Mitigation Strategies
+
+- Add fallback explanations and a retry flow when AI confidence is low.
+- Keep the child journey simple, visual, and guided.
+- Cache or reuse generated educational content where possible.
+- Minimize stored personal data and keep child identity handling privacy-aware.
+- Use CloudWatch alarms and alerting for operational visibility.
+
+### Contingency Plans
+
+- Fall back to prewritten quiz content when Bedrock is unavailable.
+- Fall back to a safe "try again" flow when image confidence is too low.
+- Keep a local development mode with in-memory storage for fast testing.
+
+## 8. Expected Outcomes
+
+### Educational Outcomes
+
+- Children learn waste classification through repetition and play.
+- Learning becomes more memorable because it is tied to real-world objects.
+- The app encourages positive habits through streaks and rewards.
+
+### Technical Outcomes
+
+- A reusable AWS serverless foundation for future educational features.
+- A clean child profile system linked to progress tracking.
+- A scalable app structure that supports both web and mobile experiences.
+
+### Long-Term Value
+
+- A platform that can expand into broader environmental education topics.
