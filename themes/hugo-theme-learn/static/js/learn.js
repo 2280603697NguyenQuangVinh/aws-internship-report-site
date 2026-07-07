@@ -168,16 +168,6 @@ jQuery(document).ready(function () {
     $(document.body).removeClass("searchbox-hidden");
     $("[data-search-input]").val(searchValue);
     $("[data-search-input]").trigger("input");
-    var searchedElem = $("#body-inner")
-      .find(":contains(" + searchValue + ")")
-      .get(0);
-    if (searchedElem) {
-      searchedElem.scrollIntoView(true);
-      var scrolledY = window.scrollY;
-      if (scrolledY) {
-        window.scroll(0, scrolledY - 125);
-      }
-    }
   }
 
   // clipboard
