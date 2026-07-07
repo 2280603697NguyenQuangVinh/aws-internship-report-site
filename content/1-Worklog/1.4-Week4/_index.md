@@ -24,6 +24,12 @@ pre: " <b> 1.4. </b> "
 | Saturday | Week summary and review. | 15/05/2026 | 15/05/2026 | AWS Skill Builder / GitHub |
 | Sunday |  |  |  |  |
 
-### Results Week 4:
+## Week 4 Achievements:
 
-* Summary of achievements.
+* Continued learning on AWS Skill Builder and reviewed core services such as Compute, Storage, Networking, Security, and Monitoring.
+* Completed simulation labs for EC2, S3, IAM, CloudWatch, and AWS CLI.
+* Made progress on the group project by finalizing business logic and core features.
+* Designed and built the initial UI.
+* Developed backend modules and database connections.
+* Set up the cloud environment on AWS for the project.
+* Synchronized source code across the team via Git and GitHub.

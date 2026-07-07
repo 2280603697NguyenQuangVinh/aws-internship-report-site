@@ -28,8 +28,9 @@ pre: " <b> 1.7. </b> "
 
 ### Kết quả đạt được tuần 7:
 
-* Tiếp nhận và hoàn thiện nhiệm vụ dự án nhóm, gồm phân tích nghiệp vụ, thiết kế kiến trúc và xây dựng tính năng.
-* Sử dụng GitHub/Git và Jira để quản lý mã nguồn, phối hợp nhóm và cập nhật tiến độ công việc.
-* Hoàn thiện thiết kế giao diện và cải thiện trải nghiệm người dùng cho dự án.
-* Kiểm thử tích hợp frontend-backend và xử lý lỗi giúp đảm bảo luồng hoạt động mượt mà.
-* Tổng kết, rà soát lại nội dung đã học và chuẩn bị kế hoạch cho tuần tiếp theo.
+* Nhận phản hồi về kiến trúc từ các chuyên gia AWS và cải tiến thiết kế hệ thống.
+* Xây dựng các API backend cho quản lý hồ sơ người dùng, chức năng AI Camera và theo dõi hoạt động/điểm thưởng của người dùng.
+* Thiết kế và hoàn thiện cấu trúc cơ sở dữ liệu.
+* Phát triển các màn hình frontend cho tạo nhân vật, hồ sơ người dùng và AI Camera.
+* Kết nối giao diện frontend với các API backend đã hoàn thiện.
+* Thực hiện review code và theo dõi tiến độ giữa các thành viên.

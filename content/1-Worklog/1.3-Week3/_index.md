@@ -24,6 +24,12 @@ pre: " <b> 1.3. </b> "
 | Saturday | Week 3 summary and exercises. | 08/05/2026 | 08/05/2026 | GitHub / Jira |
 | Sunday |  |  |  |  |
 
-### Results Week 3:
+### Week 3 Achievements:
 
-* Outcomes and learning summary.
+* Consolidated hands-on practice with core AWS services, including EC2, S3, IAM, CloudWatch, and basic networking.
+* Formed the project team and agreed on the GreenLens Kids project topic.
+* Discussed ideas and defined the business logic for the system.
+* Analyzed functional requirements and mapped out the system workflow.
+* Identified appropriate AWS services for the system architecture.
+* Designed the initial cloud architecture and divided responsibilities among team members.
+* Set up project management tools such as Jira and GitHub.

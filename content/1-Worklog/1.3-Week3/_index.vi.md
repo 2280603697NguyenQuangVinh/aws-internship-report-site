@@ -27,8 +27,10 @@ pre: " <b> 1.3. </b> "
 
 ### Kết quả đạt được tuần 3:
 
-* Nắm vững cách triển khai và quản lý EC2, đồng thời hiểu rõ quy trình cấu hình SSH và môi trường cho instance.
-* Thực hành lưu trữ object với S3, quản lý truy cập bucket và nâng cao hiểu biết về bảo mật dữ liệu.
-* Hiểu rõ về IAM: tạo user, role, policy và sử dụng access key để kết nối AWS CLI.
-* Áp dụng CloudWatch để giám sát tài nguyên, theo dõi CPU/Network và thiết lập alarm cơ bản.
-* Hoàn thành nhiều bài lab AWS Skill Builder giúp củng cố thực hành dịch vụ.
+* Tổng hợp được các bài thực hành thực tế với các dịch vụ AWS cốt lõi như EC2, S3, IAM, CloudWatch và networking cơ bản.
+* Thành lập nhóm dự án và thống nhất chủ đề GreenLens Kids.
+* Thảo luận ý tưởng và xác định logic nghiệp vụ cho hệ thống.
+* Phân tích yêu cầu chức năng và vẽ sơ đồ luồng hoạt động của hệ thống.
+* Xác định các dịch vụ AWS phù hợp cho kiến trúc hệ thống.
+* Thiết kế kiến trúc cloud ban đầu và phân chia trách nhiệm giữa các thành viên trong nhóm.
+* Thiết lập các công cụ quản lý dự án như Jira và GitHub.

@@ -26,4 +26,9 @@ pre: " <b> 1.1. </b> "
 
 ### Kết quả đạt được tuần 1:
 
-* Tổng kết, rà soát lại nội dung đã học và chuẩn bị kế hoạch cho tuần tiếp theo.
+* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản như Compute, Storage, Database, Networking & CDN, Security và Monitoring & Logging.
+* Tạo và cấu hình thành công AWS Free Tier account.
+* Làm quen với AWS Management Console và biết cách tìm, truy cập và sử dụng các dịch vụ qua giao diện web.
+* Cài đặt và cấu hình AWS CLI trên máy tính, bao gồm Access Key, Secret Key, Default Region và Output format.
+* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như kiểm tra thông tin tài khoản và cấu hình, lấy danh sách regions, xem dịch vụ EC2, tạo và quản lý key pairs, cũng như kiểm tra thông tin các dịch vụ đang chạy.
+* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.

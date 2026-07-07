@@ -12,48 +12,26 @@ pre: " <b> 1.10. </b> "
 
 ### Mục tiêu tuần 10:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Refactor và cấu trúc lại toàn bộ dự án để làm cho codebase sạch hơn và dễ bảo trì hơn.
+* Xây dựng trang Admin và trang hồ sơ cá nhân cho ứng dụng.
+* Chuẩn bị dự án cho giai đoạn phát triển và kiểm thử tiếp theo.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| ---- | --------- | ------------ | --------------- | -------------- |
+| Thứ Hai | Refactor toàn bộ codebase của dự án bằng cách tổ chức lại cấu trúc thư mục frontend và backend, chuẩn hóa quy ước đặt tên cho hàm, biến và component, loại bỏ code thừa và tối ưu hóa logic xử lý. | 22/06/2026 | 22/06/2026 | GitHub |
+| Thứ Ba | Tiếp tục refactor bằng cách tách các component có thể tái sử dụng, chuẩn hóa định dạng response của API, review source code và xử lý các lỗi phát sinh sau khi refactor. | 23/06/2026 | 23/06/2026 | GitHub |
+| Thứ Tư | Xây dựng trang Admin bằng cách thiết kế giao diện dashboard quản trị và triển khai các chức năng quản lý người dùng và quản lý nội dung rác. | 24/06/2026 | 24/06/2026 | GitHub / Figma |
+| Thứ Năm | Hoàn thiện trang Admin bằng cách triển khai các chức năng quản lý điểm thưởng và hoạt động người dùng, phát triển API backend tương ứng và kết nối giao diện với API. | 25/06/2026 | 25/06/2026 | GitHub |
+| Thứ Sáu | Xây dựng trang hồ sơ cá nhân bằng cách thiết kế và phát triển giao diện hồ sơ người dùng, hiển thị thông tin nhân vật, lịch sử hoạt động, điểm thưởng và thành tích. | 26/06/2026 | 26/06/2026 | GitHub / Figma |
+| Thứ Bảy | Kết thúc tuần 10 bằng việc rà soát lại toàn bộ code sau refactor, kiểm tra trang Admin và trang hồ sơ cá nhân, đánh giá tiến độ và xác định các điểm còn thiếu cần xử lý. | 27/06/2026 | 27/06/2026 | GitHub / Jira |
 
 ### Kết quả đạt được tuần 10:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Hoàn thành thành công quá trình refactor dự án, giúp codebase rõ ràng, dễ bảo trì và dễ mở rộng hơn.
+* Xây dựng nền tảng ban đầu cho trang Admin với các chức năng quản trị cơ bản.
+* Hoàn thiện giao diện trang hồ sơ cá nhân, giúp hệ thống trở nên đầy đủ và thân thiện hơn với người dùng.
+* Rà soát và đánh giá lại tiến độ dự án, xác định rõ các khu vực cần cải thiện trong tuần tiếp theo.
+* Tăng cường hiệu quả làm việc nhóm thông qua review code và đồng bộ tiến độ chung.
 
 

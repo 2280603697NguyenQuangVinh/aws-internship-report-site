@@ -10,116 +10,94 @@ pre: " <b> 4.1. </b> "
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+# Bài thu hoạch “FCAJ Community Day”
 
 ### Mục Đích Của Sự Kiện
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+- Chia sẻ kinh nghiệm học tập và phát triển bản thân trong lĩnh vực công nghệ.
+- Giới thiệu các phương pháp ứng dụng AI nhằm nâng cao hiệu quả làm việc.
+- Cập nhật xu hướng sử dụng AI trong phát triển phần mềm.
+- Chia sẻ kinh nghiệm chuẩn bị kỹ năng và tư duy để sẵn sàng tham gia thị trường lao động.
 
 ### Danh Sách Diễn Giả
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+- Huynh Hoang Long – Addicted to Learning Like You're Addicted to Social Media
+- Thịnh Nguyễn – Automated Prompt Engineering: Enhancing LLM Output Quality
+- Khang Nguyễn – Career Opportunities & Mindset for Entering the Job Market
+- Thao Nguyen Phuong – BMAD Method – AI-Driven Development Workflow
 
 ### Nội Dung Nổi Bật
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+#### Addicted to Learning Like You're Addicted to Social Media
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+- Chia sẻ tư duy biến việc học thành một thói quen hằng ngày giống như cách mọi người sử dụng mạng xã hội.
+- Nhấn mạnh việc xây dựng hệ thống học tập liên tục thay vì chỉ học khi có mục tiêu ngắn hạn.
+- Khuyến khích duy trì sự tò mò, chủ động tìm hiểu công nghệ mới và cập nhật kiến thức thường xuyên.
+- Chia sẻ các phương pháp giúp hình thành thói quen học tập bền vững và nâng cao năng lực bản thân.
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+#### Automated Prompt Engineering: Enhancing LLM Output Quality
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+- Giới thiệu dự án cá nhân về Automated Prompt Engineering nhằm nâng cao chất lượng đầu ra của các mô hình ngôn ngữ lớn (LLM).
+- Phân tích vai trò của Prompt Engineering trong việc cải thiện độ chính xác và tính nhất quán của kết quả.
+- Chia sẻ ý tưởng tự động tối ưu prompt thay vì phải chỉnh sửa thủ công nhiều lần.
+- Thảo luận về khả năng ứng dụng phương pháp này trong các sản phẩm AI thực tế.
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+#### Career Opportunities & Mindset for Entering the Job Market
 
-#### Domain-Driven Design (DDD)
+-  Chia sẻ góc nhìn về nhu cầu tuyển dụng và xu hướng của thị trường công nghệ hiện nay.
+- Những kỹ năng cần chuẩn bị trước khi tham gia thị trường lao động như kỹ năng chuyên môn, kỹ năng giao tiếp và làm việc nhóm.
+- Tầm quan trọng của tư duy chủ động học hỏi, khả năng giải quyết vấn đề và thích nghi với công nghệ mới.
+- Định hướng cách xây dựng hồ sơ cá nhân, portfolio và kinh nghiệm dự án để tăng cơ hội nghề nghiệp.
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+#### BMAD Method – AI-Driven Development Workflow
 
-#### Event-Driven Architecture
+- Giới thiệu **BMAD Method**, một framework hỗ trợ phát triển phần mềm với sự hỗ trợ của AI.
+- Chia sẻ cách tổ chức quy trình phát triển dự án thông qua các AI Agent với vai trò khác nhau.
+- Minh họa cách AI hỗ trợ từ giai đoạn phân tích yêu cầu, thiết kế, lập kế hoạch đến triển khai và kiểm thử.
+- Giới thiệu repository BMAD Method để cộng đồng có thể tham khảo và áp dụng vào các dự án thực tế.
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+### Những kiến thức rút ra
 
-#### Compute Evolution
+#### Phát triển bản thân
 
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
+- Việc học tập nên trở thành một thói quen lâu dài thay vì chỉ phục vụ mục tiêu ngắn hạn.
+- Duy trì tinh thần học hỏi liên tục giúp thích nghi nhanh với sự thay đổi của công nghệ.
 
-#### Amazon Q Developer
+#### Ứng dụng AI
 
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+- Prompt Engineering đóng vai trò quan trọng trong việc nâng cao chất lượng phản hồi của LLM.
+- Tự động hóa quá trình tối ưu prompt giúp tiết kiệm thời gian và tăng hiệu quả phát triển các ứng dụng AI.
+- AI có thể hỗ trợ nhiều giai đoạn trong vòng đời phát triển phần mềm nếu được tích hợp đúng quy trình.
 
-### Những Gì Học Được
+#### Định hướng nghề nghiệp
 
-#### Tư Duy Thiết Kế
+- Bên cạnh kiến thức chuyên môn, doanh nghiệp đánh giá cao kỹ năng mềm, khả năng làm việc nhóm và tư duy giải quyết vấn đề.
+- Portfolio và các dự án thực tế là yếu tố quan trọng giúp tạo lợi thế khi ứng tuyển.
+- Việc chủ động học hỏi và liên tục cập nhật công nghệ mới sẽ mở ra nhiều cơ hội nghề nghiệp hơn.
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+#### Áp dụng vào công việc
 
-#### Kiến Trúc Kỹ Thuật
+### Trải nghiệm tham gia buổi chia sẻ
+- Buổi chia sẻ cuối tuần mang đến nhiều góc nhìn thực tế về học tập, ứng dụng AI và định hướng nghề nghiệp. Nội dung chương trình không chỉ tập trung vào công nghệ mà còn nhấn mạnh tư duy phát triển bản thân và chuẩn bị cho sự nghiệp trong ngành CNTT..
 
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
+#### Học hỏi từ các chuyên gia
+- Hiểu được tầm quan trọng của việc duy trì thói quen học tập liên tục để theo kịp sự phát triển nhanh của AI và công nghệ.
+- Tiếp cận ý tưởng tự động hóa Prompt Engineering nhằm nâng cao hiệu quả khi phát triển các ứng dụng sử dụng LLM.
+- Có thêm góc nhìn thực tế về những kỹ năng và tư duy cần chuẩn bị trước khi bước vào thị trường lao động.
+- Biết thêm về BMAD Method và cách AI có thể hỗ trợ toàn bộ quy trình phát triển phần mềm.
 
-#### Chiến Lược Hiện Đại Hóa
-
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
-
-### Ứng Dụng Vào Công Việc
-
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
-
-### Trải nghiệm trong event
-
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
-
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
-
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
-
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
-
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
+#### Tiếp cận các công cụ và phương pháp mới
+- Tìm hiểu quy trình phát triển phần mềm với sự hỗ trợ của AI Agent.
+- Nhận thấy tiềm năng của Prompt Engineering trong việc nâng cao hiệu quả các hệ thống AI.
+- Có thêm tài liệu và nguồn tham khảo để nghiên cứu các phương pháp phát triển phần mềm hiện đại.
 
 #### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
+- Học tập liên tục là yếu tố quan trọng để duy trì năng lực cạnh tranh trong lĩnh vực công nghệ.
+- AI không chỉ hỗ trợ viết mã mà còn có thể tham gia vào toàn bộ vòng đời phát triển phần mềm.
+- Chuẩn bị tốt cả kỹ năng chuyên môn, kỹ năng mềm và tư duy phát triển bản thân sẽ tạo nhiều lợi thế khi tham gia thị trường lao động.
+- Việc tham gia các buổi chia sẻ cộng đồng giúp mở rộng kiến thức, cập nhật xu hướng mới và học hỏi kinh nghiệm từ những người đã có nhiều trải nghiệm thực tế.
+
 
 #### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
+* ![alt text](image.png)
 > Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.

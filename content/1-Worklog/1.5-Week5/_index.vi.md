@@ -27,8 +27,10 @@ pre: " <b> 1.5. </b> "
 
 ### Kết quả đạt được tuần 5:
 
-* Nắm vững cách triển khai và quản lý EC2, đồng thời hiểu rõ quy trình cấu hình SSH và môi trường cho instance.
-* Hiểu rõ về IAM: tạo user, role, policy và sử dụng access key để kết nối AWS CLI.
-* Nắm được kiến trúc mạng AWS cơ bản, gồm VPC, Subnet, Internet Gateway, Route Table và Security Group.
-* Áp dụng CloudWatch để giám sát tài nguyên, theo dõi CPU/Network và thiết lập alarm cơ bản.
-* Hoàn thành nhiều bài lab AWS Skill Builder giúp củng cố thực hành dịch vụ.
+* Mở rộng kiến thức AWS trên Skill Builder và tìm hiểu thêm các dịch vụ như CloudFormation, Amazon FSx và cấu hình VPC nâng cao.
+* Nâng cao hiểu biết về kiến trúc triển khai ứng dụng trên AWS và các best practices.
+* Hoàn thiện phân tích nghiệp vụ và luồng chức năng cốt lõi của dự án.
+* Thiết lập cấu trúc repository của dự án bằng cách khởi tạo Git và chia module thành Frontend, Backend và Database.
+* Thiết lập các chuẩn code chung.
+* Thiết kế kiến trúc tổng thể hệ thống sử dụng các dịch vụ AWS.
+* Tổ chức các buổi họp nhóm để đồng bộ tiến độ và hỗ trợ đồng đội.

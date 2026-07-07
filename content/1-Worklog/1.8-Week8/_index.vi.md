@@ -28,8 +28,10 @@ pre: " <b> 1.8. </b> "
 
 ### Kết quả đạt được tuần 8:
 
-* Sử dụng GitHub/Git và Jira để quản lý mã nguồn, phối hợp nhóm và cập nhật tiến độ công việc.
-* Hoàn thiện thiết kế giao diện và cải thiện trải nghiệm người dùng cho dự án.
-* Kiểm thử tích hợp frontend-backend và xử lý lỗi giúp đảm bảo luồng hoạt động mượt mà.
-* Hoàn thành phần Mini Game, bao gồm API, giao diện và kiểm thử trải nghiệm chơi game.
-* Tổng kết, rà soát lại nội dung đã học và chuẩn bị kế hoạch cho tuần tiếp theo.
+* Hoàn thành các API backend còn lại và chức năng lưu trữ dữ liệu người dùng.
+* Hoàn thiện logic nghiệp vụ quét rác bằng AI Camera và tích hợp các dịch vụ AWS vào backend.
+* Hoàn thành các màn hình frontend quan trọng và toàn bộ luồng trải nghiệm người dùng từ Create Profile đến AI Camera.
+* Tối ưu giao diện cho việc sử dụng responsive trên nhiều thiết bị.
+* Kết nối và kiểm thử toàn bộ API giữa frontend và backend.
+* Xác định và xử lý các lỗi tích hợp.
+* Cập nhật tài liệu kỹ thuật và tài liệu dự án.

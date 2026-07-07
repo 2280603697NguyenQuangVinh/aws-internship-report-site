@@ -28,8 +28,10 @@ pre: " <b> 1.6. </b> "
 
 ### Kết quả đạt được tuần 6:
 
-* Nắm vững cách triển khai và quản lý EC2, đồng thời hiểu rõ quy trình cấu hình SSH và môi trường cho instance.
-* Thực hành lưu trữ object với S3, quản lý truy cập bucket và nâng cao hiểu biết về bảo mật dữ liệu.
-* Hiểu rõ về IAM: tạo user, role, policy và sử dụng access key để kết nối AWS CLI.
-* Hoàn thành nhiều bài lab AWS Skill Builder giúp củng cố thực hành dịch vụ.
-* Tiếp nhận và hoàn thiện nhiệm vụ dự án nhóm, gồm phân tích nghiệp vụ, thiết kế kiến trúc và xây dựng tính năng.
+* Ôn tập và củng cố kiến thức về EC2, S3, IAM, bảo mật và monitoring trên AWS Skill Builder.
+* Xây dựng giao diện frontend ban đầu, bao gồm giao diện chính và hình ảnh nhân vật.
+* Thiết kế bố cục tổng thể và luồng trải nghiệm người dùng.
+* Phát triển các chức năng backend, bao gồm quản lý hồ sơ người dùng, thêm dữ liệu và xử lý sự kiện.
+* Thiết kế và triển khai các API phục vụ frontend.
+* Rà soát và đồng bộ mã nguồn giữa frontend và backend.
+* Thảo luận và lên kế hoạch cải thiện UI/UX cho sprint tiếp theo.

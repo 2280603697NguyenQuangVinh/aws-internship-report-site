@@ -24,6 +24,12 @@ pre: " <b> 1.6. </b> "
 | Saturday | Week summary. | 29/05/2026 | 29/05/2026 | GitHub / Figma |
 | Sunday |  |  |  |  |
 
-### Results Week 6:
+### Week 6 Achievements:
 
-* Summary of achievements.
+* Reviewed and reinforced knowledge of EC2, S3, IAM, security, and monitoring on AWS Skill Builder.
+* Developed the initial frontend UI, including the main interface and character visuals.
+* Built the overall layout and user experience flow.
+* Developed backend features, including user profile management, data insertion, and event-handling logic.
+* Designed and implemented APIs to serve the frontend.
+* Reviewed and synchronized source code between frontend and backend.
+* Discussed and planned UI/UX improvements for the next sprint.

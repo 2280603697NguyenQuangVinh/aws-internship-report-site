@@ -28,8 +28,10 @@ pre: " <b> 1.4. </b> "
 
 ### Kết quả đạt được tuần 4:
 
-* Nắm vững cách triển khai và quản lý EC2, đồng thời hiểu rõ quy trình cấu hình SSH và môi trường cho instance.
-* Thực hành lưu trữ object với S3, quản lý truy cập bucket và nâng cao hiểu biết về bảo mật dữ liệu.
-* Hiểu rõ về IAM: tạo user, role, policy và sử dụng access key để kết nối AWS CLI.
-* Áp dụng CloudWatch để giám sát tài nguyên, theo dõi CPU/Network và thiết lập alarm cơ bản.
-* Hoàn thành nhiều bài lab AWS Skill Builder giúp củng cố thực hành dịch vụ.
+* Tiếp tục học tập trên AWS Skill Builder và ôn lại các dịch vụ cốt lõi như Compute, Storage, Networking, Security và Monitoring.
+* Hoàn thành các lab mô phỏng cho EC2, S3, IAM, CloudWatch và AWS CLI.
+* Tiến bộ trong dự án nhóm bằng cách hoàn thiện logic nghiệp vụ và các chức năng cốt lõi.
+* Thiết kế và xây dựng giao diện ban đầu.
+* Phát triển các module backend và kết nối cơ sở dữ liệu.
+* Thiết lập môi trường cloud trên AWS cho dự án.
+* Đồng bộ mã nguồn giữa các thành viên bằng Git và GitHub.

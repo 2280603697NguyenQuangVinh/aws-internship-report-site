@@ -24,6 +24,10 @@ pre: " <b> 1.2. </b> "
 | Saturday | Review Week 2: EC2, S3, IAM, VPC, CloudWatch. Practice and take notes. | 01/05/2026 | 01/05/2026 | AWS Skill Builder |
 | Sunday |  |  |  |  |
 
-### Results Week 2:
+### Week 2 Achievements:
 
-* Key outcomes and practical skills acquired during the week.
+* Learned and practiced EC2 by launching and configuring a Linux EC2 instance, connecting via SSH, and installing environment tools such as Node.js, Python, and Nginx.
+* Learned and practiced S3 by creating a bucket, uploading and downloading files, and configuring public and private access.
+* Learned and practiced IAM by creating users and roles, assigning policies, and using access keys with AWS CLI.
+* Understood AWS networking fundamentals, including VPC, Subnet, Internet Gateway, Route Table, Security Group, and Network ACL.
+* Learned monitoring and logging with CloudWatch by monitoring EC2 CPU and network metrics and creating a basic alarm.

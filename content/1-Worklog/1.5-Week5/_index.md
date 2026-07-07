@@ -24,6 +24,12 @@ pre: " <b> 1.5. </b> "
 | Saturday | Week summary and planning. | 22/05/2026 | 22/05/2026 | GitHub |
 | Sunday |  |  |  |  |
 
-### Results Week 5:
+### Week 5 Achievements:
 
-* Summary of achievements.
+* Expanded AWS knowledge through Skill Builder and studied additional services such as CloudFormation, Amazon FSx, and advanced VPC configurations.
+* Deepened understanding of AWS application deployment architecture and best practices.
+* Finalized business analysis and core feature workflows for the project.
+* Set up the project repository structure by initializing Git and dividing the work into Frontend, Backend, and Database.
+* Established shared code standards.
+* Designed the overall system architecture using AWS services.
+* Held team meetings to synchronize progress and support team members.

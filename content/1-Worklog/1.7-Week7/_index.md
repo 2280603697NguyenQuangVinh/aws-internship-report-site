@@ -24,6 +24,11 @@ pre: " <b> 1.7. </b> "
 | Saturday | Week summary and planning for Week 8. | 05/06/2026 | 05/06/2026 | GitHub |
 | Sunday |  |  |  |  |
 
-### Results Week 7:
+### Week 7 Achievements:
 
-* Summary of achievements.
+* Received architecture feedback from AWS experts and refined the system design.
+* Built backend APIs for user profile management, AI Camera functionality, and user activity/reward tracking.
+* Designed and finalized the database structure.
+* Developed frontend screens for character creation, user profile, and AI Camera.
+* Connected the frontend UI to the completed backend APIs.
+* Conducted cross-member source code review and progress tracking.

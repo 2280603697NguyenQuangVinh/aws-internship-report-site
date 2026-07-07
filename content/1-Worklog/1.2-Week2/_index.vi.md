@@ -26,8 +26,8 @@ pre: " <b> 1.2. </b> "
 
 ### Kết quả đạt được tuần 2:
 
-* Nắm vững cách triển khai và quản lý EC2, đồng thời hiểu rõ quy trình cấu hình SSH và môi trường cho instance.
-* Thực hành lưu trữ object với S3, quản lý truy cập bucket và nâng cao hiểu biết về bảo mật dữ liệu.
-* Hiểu rõ về IAM: tạo user, role, policy và sử dụng access key để kết nối AWS CLI.
-* Nắm được kiến trúc mạng AWS cơ bản, gồm VPC, Subnet, Internet Gateway, Route Table và Security Group.
-* Áp dụng CloudWatch để giám sát tài nguyên, theo dõi CPU/Network và thiết lập alarm cơ bản.
+* Học và thực hành EC2 bằng cách khởi tạo và cấu hình một EC2 instance Linux, kết nối qua SSH và cài đặt các công cụ môi trường như Node.js, Python và Nginx.
+* Học và thực hành S3 bằng cách tạo bucket, upload và download file, đồng thời cấu hình quyền truy cập công khai và riêng tư.
+* Học và thực hành IAM bằng cách tạo user và role, gán policy và sử dụng access keys với AWS CLI.
+* Hiểu được nền tảng networking của AWS, bao gồm VPC, Subnet, Internet Gateway, Route Table, Security Group và Network ACL.
+* Học được monitoring và logging với CloudWatch bằng cách theo dõi các chỉ số CPU và mạng của EC2 và tạo một alarm cơ bản.

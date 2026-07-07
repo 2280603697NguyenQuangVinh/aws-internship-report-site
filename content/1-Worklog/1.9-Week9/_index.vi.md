@@ -27,7 +27,10 @@ pre: " <b> 1.9. </b> "
 
 ### Kết quả đạt được tuần 9:
 
-* Sử dụng GitHub/Git và Jira để quản lý mã nguồn, phối hợp nhóm và cập nhật tiến độ công việc.
-* Hoàn thiện thiết kế giao diện và cải thiện trải nghiệm người dùng cho dự án.
-* Kiểm thử tích hợp frontend-backend và xử lý lỗi giúp đảm bảo luồng hoạt động mượt mà.
-* Hoàn thành phần Mini Game, bao gồm API, giao diện và kiểm thử trải nghiệm chơi game.
+* Hoàn thành toàn bộ API backend cho hệ thống Mini Game, bao gồm logic tính điểm, XP và xử lý kết quả trò chơi.
+* Kiểm thử và tối ưu hóa toàn bộ API Mini Game.
+* Hoàn thiện tài liệu API để hỗ trợ tích hợp frontend.
+* Phát triển frontend Mini Game, bao gồm các màn hình UI và kết nối với toàn bộ API Mini Game.
+* Hiển thị kết quả trò chơi, điểm số và phần thưởng từ dữ liệu backend.
+* Thực hiện kiểm thử end-to-end cho toàn bộ gameplay.
+* Hoàn thiện tích hợp frontend-backend và cập nhật tài liệu kỹ thuật.

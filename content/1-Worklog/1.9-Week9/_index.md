@@ -24,6 +24,12 @@ pre: " <b> 1.9. </b> "
 | Saturday | Week summary and collaboration tasks. | 19/06/2026 | 19/06/2026 | GitHub / Jira |
 | Sunday |  |  |  |  |
 
-### Results Week 9:
+### Week 9 Achievements:
 
-* Summary of achievements.
+* Completed all backend APIs for the Mini Game system, including scoring and XP calculation logic and game result processing.
+* Tested and optimized all Mini Game APIs.
+* Completed API documentation to support frontend integration.
+* Developed the Mini Game frontend, including UI screens and connection to all Mini Game APIs.
+* Displayed game results, scores, and rewards from backend data.
+* Performed full end-to-end gameplay testing.
+* Completed frontend-backend integration and updated technical documentation.

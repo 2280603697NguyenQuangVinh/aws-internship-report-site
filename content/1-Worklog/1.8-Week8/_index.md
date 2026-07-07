@@ -24,6 +24,12 @@ pre: " <b> 1.8. </b> "
 | Saturday | Week summary and prepare for Mini Game phase. | 12/06/2026 | 12/06/2026 | GitHub / Jira |
 | Sunday |  |  |  |  |
 
-### Results Week 8:
+### Week 8 Achievements:
 
-* Summary of achievements.
+* Completed the remaining backend APIs and user data storage features.
+* Finalized the AI Camera waste-scanning business logic and integrated AWS services into the backend.
+* Completed key frontend screens and the full user experience flow from Create Profile to AI Camera.
+* Optimized the UI for responsive use across devices.
+* Connected and tested all APIs end-to-end between frontend and backend.
+* Identified and resolved integration bugs.
+* Updated technical documentation and project documentation.
