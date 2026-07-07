@@ -10,136 +10,111 @@ pre: " <b> 4.1. </b> "
 ⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
 {{% /notice %}}
 
-# Summary Report: “FCAJ Community Day”
+# Summary Report: “Weekend Knowledge Sharing Session”
 
 ### Event Objectives
 
-- Explore practical applications of AI in software development and enterprise systems
-- Learn how context improves AI performance and user experience
-- Introduce modern AWS AI services and cloud technologies
-- Share real-world experiences in building AI-powered products and systems
+- Encourage continuous learning and self-development in the technology field.
+- Explore practical AI techniques that improve software development productivity.
+- Introduce AI-assisted software development methodologies and modern development workflows.
+- Provide career guidance and essential mindsets for students preparing to enter the technology job market.
 
 ### Speakers
 
-- **Tinh Truong** – Context Is Everything: Making AI Actually Work for You
-- **Anh Pham** – Friendly AI Assistant with Amazon Quick
-- **Thinh Nguyen** – From Edge To Origin: CloudFront as Your Foundation
-- **Team VIB** – 36 hrs with LotusHacks – Building UTMorpho from Idea to Reality
-- **Duc Dao** – Non-Determinism of "Deterministic" LLM Settings
-- **Vy Lam** – Enterprise-Grade Multi-Agent System: The Case of Startup Credit Scoring
-
+- **Huynh Hoang Long** – Addicted to Learning Like You're Addicted to Social Media
+- **Thịnh Nguyễn** – Automated Prompt Engineering: Enhancing LLM Output Quality
+- **Khang Nguyễn** – Career Opportunities & Mindset for Entering the Job Market
+- **Thao Nguyen Phuong** – BMAD Method – AI-Driven Development Workflow
 ### Key Highlights
 
-#### Context Is Everything: Making AI Actually Work for You
+#### Addicted to Learning Like You're Addicted to Social Media
 
-- AI performance depends heavily on high-quality context, not only prompts.
-- The evolution of AI is moving from simple prompting toward memory-enabled AI assistants (Second AI Brain concept).
-- Better context produces more accurate, personalized, and useful AI responses.
-- Practical techniques for providing effective context and career advice for students interested in AI development. 
+- Building a learning habit that is as consistent as using social media every day.
+- Creating a sustainable learning system instead of learning only when required.
+- Developing curiosity and continuously exploring new technologies.
+- Practical tips for maintaining motivation and improving long-term learning effectiveness.
 
-#### Friendly AI Assistant with Amazon Quick
+#### Automated Prompt Engineering: Enhancing LLM Output Quality
 
-- Quick Chat Agent enables conversational exploration of business data.
-- Quick Flows allows users to build intelligent workflows using natural language without coding.
-- Quick Spaces provides collaborative workspaces for sharing AI-generated insights across teams.
-- Quick Sight simplifies dashboard and report creation directly from raw data using natural language.  
+- Introduction to a personal project on Automated Prompt Engineering.
+- Improving LLM output quality through automated prompt optimization.
+- Reducing manual prompt refinement while increasing response consistency.
+- Practical applications of automated prompt engineering in AI development.
 
-#### From Edge To Origin: CloudFront as Your Foundation
+#### Career Opportunities & Mindset for Entering the Job Market
+- Current trends and opportunities in the technology job market.
+- Essential technical and soft skills for students preparing to enter the workforce.
+- Importance of problem-solving, teamwork, communication, and continuous learning.
+- Building a strong portfolio and gaining practical project experience
 
-- Amazon CloudFront supports a wide variety of workloads beyond static content delivery.
-- Techniques for cost optimization using caching and edge locations.
-- Security capabilities including protection against common web threats.
-- Improving application reliability through global edge infrastructure.
-- Performance optimization using low-latency content delivery and intelligent routing.
+#### BMAD Method – AI-Driven Development Workflow
 
-#### 36 hrs with LotusHacks – Building UTMorpho from Idea to Reality
-
-- Experience of participating in a 36-hour hackathon.
-- Brainstorming process from identifying problems to generating product ideas.
-- Designing and developing UTMorpho under significant time constraints.
-- Challenges encountered during development and lessons learned from failures.
-- Live product demonstration and discussion of future improvements. 
-
-#### Non-Determinism of "Deterministic" LLM Settings
-
-- Explanation of how Large Language Models generate the next token.
-- Common misconception that Temperature = 0 always guarantees deterministic outputs.
-- How inference optimizations can still introduce variations in generated responses.
-- Practical impacts on AI applications requiring consistent outputs.
-- Strategies for mitigating output variability in production systems. 
-
-#### Enterprise-Grade Multi-Agent System
-
-- Challenges of applying traditional banking systems to startup credit evaluation.
-- Understanding when a single-agent architecture is sufficient and when multiple agents are required.
-- Design of a multi-agent system that simulates a virtual credit committee.
-- Importance of guardrails, compliance, and governance in enterprise AI.
-- Business ROI and implementation roadmap for deploying multi-agent systems. 
+- Introduction to the BMAD Method for AI-assisted software development.
+- AI agents supporting different stages of the software development lifecycle.
+- AI-assisted requirement analysis, planning, implementation, and testing.
+- Open-source BMAD Method repository as a practical learning resource.
 
 ### Key Takeaways
 
+#### Personal Development
+- **Continuous learning** should become a daily habit rather than a temporary goal.
+- Building a structured learning system leads to long-term professional growth.
+- Staying curious helps developers adapt to rapidly changing technologies.
+
 #### AI Development
 
-- **Context is the foundation** of effective AI applications.
-- Memory-enabled AI assistants provide more personalized and consistent user experiences.
-- Understanding LLM behavior helps developers build more reliable AI systems.
-- AI workflows should combine technical capability with appropriate guardrails and governance.
+- **Prompt Engineering** Ais essential for improving LLM response quality.
+- Automated prompt optimization increases development productivity.
+- AI can support multiple phases of the software development lifecycle beyond code generation.
+#### Career Preparation
 
-#### Cloud & Modern Applications
+- Employers value both technical expertise and soft skills.
+- Real-world projects and a strong portfolio significantly improve employability.
+- A growth mindset and continuous self-improvement create long-term career advantages.
 
-- Amazon CloudFront provides not only content delivery but also security, reliability, and performance optimization.
-- Natural-language interfaces significantly reduce the complexity of building data analysis workflows.
-- AI-powered business intelligence tools make data exploration accessible to non-technical users. 
+### Development Workflow
 
-#### AI System Architecture
-
-- Multi-agent systems are better suited for solving complex enterprise problems than a single AI agent.
-- Deterministic AI behavior cannot always be guaranteed by model parameters alone.
-- Enterprise AI requires careful consideration of compliance, scalability, and operational efficiency.
-
-### Innovation & Product Development
-
-- Successful products begin with understanding real user problems.
-- Hackathons provide valuable experience in rapid prototyping, teamwork, and decision-making under pressure.
-- Iterative development and continuous improvement are essential for transforming ideas into practical solutions.
+- AI-assisted development frameworks help improve software development efficiency.
+- Integrating AI into planning, implementation, and testing streamlines project delivery.
+- Open-source methodologies provide valuable references for modern software development.
 
 ### Applying to Work
 
-- Improve AI applications by providing richer context and incorporating memory where appropriate.
-- Explore AI-powered business intelligence tools for data analysis and reporting.
-- Apply Amazon CloudFront best practices to optimize application performance, security, and cost.
-- Consider multi-agent architectures for complex AI systems instead of relying on a single LLM.
-- Design AI applications with consistency, compliance, and governance in mind.
-- Adopt rapid prototyping and iterative development techniques learned from hackathon experiences.
+- Build a structured learning routine and continuously update technical knowledge.
+- Apply Prompt Engineering techniques to improve AI-powered applications.
+- Explore the BMAD Method and AI-assisted software development workflows.
+- Continue developing practical projects to strengthen technical skills and build a professional portfolio.
+- Improve communication, teamwork, and problem-solving skills alongside technical competencies.
 
 #### Event Experience
-- Attending the FCAJ Community Day provided valuable insights into both the technical and practical aspects of modern AI development. The event combined theoretical concepts, enterprise use cases, AWS cloud technologies, and real-world product experiences.
+- Attending the Weekend Knowledge Sharing Session was highly valuable, providing practical insights into continuous learning, AI-assisted software development, and career preparation. The event combined personal experiences, technical knowledge, and professional guidance that can be directly applied to future projects and career development.
 
 #### Learning from industry experts
-- Speakers shared practical knowledge on AI application development, cloud architecture, and enterprise AI adoption.
-- Real-world case studies demonstrated how AI technologies are applied to solve business challenges at scale.
+- Speakers shared practical experiences in continuous learning, AI development, and career preparation.
+- Real-world examples demonstrated how AI and effective learning habits contribute to long-term professional growth.
 
 #### Hands-on technical exposure
-- Learned how contextual information significantly improves AI performance.
-- Gained a better understanding of LLM inference behavior and why deterministic settings may still produce varying outputs.
-- Explored the design principles behind multi-agent AI systems and enterprise-grade architectures.
-- Discovered how Amazon CloudFront enhances application performance, security, reliability, and cost efficiency.
+- Learned how Automated Prompt Engineering improves the quality and consistency of LLM outputs.
+- Explored AI-assisted software development workflows through the BMAD Method.
+- Understood how AI can support software development from planning to implementation and testing.
 
-#### Exploring modern AI tools
-- Learned about Amazon Quick services that simplify data analysis, workflow automation, and dashboard creation using natural language.
-- Observed how AI can streamline both technical and business workflows without extensive coding.
+#### Leveraging modern tools
+- Discovered the BMAD Method as an AI-driven software development framework.
+- Learned practical approaches to integrating AI into everyday development workflows.
+- Explored open-source resources that support AI-assisted software engineering.
 
-#### Inspiration from real-world innovation
-- The LotusHacks presentation demonstrated how rapid ideation, teamwork, and resilience contribute to building a functional product within a limited timeframe.
-- The session reinforced the importance of focusing on solving meaningful user problems before selecting technologies.
+#### Networking and discussions
+- The sharing sessions provided opportunities to exchange ideas with experienced developers and AI practitioners.
+- Career discussions offered practical advice on preparing for employment and building long-term professional growth.
+- The event emphasized the importance of combining technical skills with continuous learning and personal development.
 
 #### Lessons learned
-- AI systems perform best when provided with rich contextual information rather than relying solely on prompt engineering.
-- Enterprise AI requires a balance between intelligence, reliability, governance, and scalability.
-- Cloud services such as Amazon CloudFront play a key role in delivering secure, high-performance applications.
-- Continuous experimentation, collaboration, and iterative improvement are essential for building successful AI-powered products.
+- Continuous learning is one of the most important factors for long-term success in the technology industry.
+- AI is becoming an essential partner throughout the software development lifecycle.
+- Prompt Engineering and AI-assisted workflows can significantly improve software development - productivity.
+- Strong technical skills, practical experience, and the right mindset are equally important for career success.
 
 #### Some event photos
-*Add your event photos here*  
+![alt text](image.png)
 
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+> Overall, "The Weekend Knowledge Sharing Session" provided valuable insights into continuous learning, AI-assisted software development, and career preparation. Through practical sharing from experienced speakers, I gained new perspectives on effective learning habits, AI development workflows, and the skills and mindset needed to grow in the technology industry. Overall, the event was both informative and inspiring, encouraging continuous self-improvement and the practical adoption of AI in software development.

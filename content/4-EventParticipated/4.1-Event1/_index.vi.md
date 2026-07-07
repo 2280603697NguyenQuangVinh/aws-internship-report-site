@@ -10,7 +10,7 @@ pre: " <b> 4.1. </b> "
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
 
-# Bài thu hoạch “FCAJ Community Day”
+# Bài thu hoạch “Weekend Knowledge Sharing Session”
 
 ### Mục Đích Của Sự Kiện
 
@@ -100,4 +100,4 @@ pre: " <b> 4.1. </b> "
 
 #### Một số hình ảnh khi tham gia sự kiện
 * ![alt text](image.png)
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+> Tổng thể, buổi Weekend Knowledge Sharing Session mang đến nhiều kiến thức thực tiễn về học tập liên tục, ứng dụng AI trong phát triển phần mềm và định hướng nghề nghiệp. Thông qua những chia sẻ từ các diễn giả, tôi có thêm góc nhìn về tư duy học tập, quy trình phát triển với AI và các kỹ năng cần thiết để phát triển trong lĩnh vực công nghệ. Nhìn chung, đây là một buổi chia sẻ bổ ích, truyền cảm hứng và giúp tôi có thêm động lực để không ngừng học hỏi và ứng dụng AI vào công việc cũng như các dự án cá nhân.
