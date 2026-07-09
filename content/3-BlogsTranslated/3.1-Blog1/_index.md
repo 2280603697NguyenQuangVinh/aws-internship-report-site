@@ -9,9 +9,8 @@ pre: " <b> 3.1. </b> "
 ⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
 {{% /notice %}}
 
-# Getting Started with Healthcare Data Lakes: Using Microservices
+# The process of refining the Serverless architecture for the GreenLens Kids project through practical experience*
 
-**The process of refining the Serverless architecture for the GreenLens Kids project through practical experience**
 
 Hello everyone, we are the We Are One team participating in AWS’s First Cloud AI Journey. Today, I want to share some real-world lessons we learned while designing the system architecture for GreenLens Kids. This project was built on AWS Serverless, applied AI, and gamification to guide children in sorting waste.
 
@@ -27,7 +26,7 @@ To make the app as easy as possible for children, our team initially decided to 
 
 ## 2. Fixing fragmentation in data flow planning
 
-In the initial architecture, our Lambdas were scattered and mainly just connected to S3. The operational management flow was also completely separated from the shared database, making the entire system inconsistent. Thanks to detailed expert reviews, we restructured the entire diagram into proper layers for easier management and scalability: Presentation Layer, API Layer, Application Layer, Data Layer, and External AI Services.
+In the initial architecture, our Lambdas were scattered and mainly just connected to S3. The operational management flow was also completely separated from the shared database, making the entire system inconsistent. Thanks to detailed expert reviews, we restructured the entire diagram into proper layers for easier management and scalability: Presentation Layer, API Layer, Application Layer, Data Layer, and AI Services.
 
 ---
 
