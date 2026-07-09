@@ -9,9 +9,7 @@ pre: " <b> 3.1. </b> "
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
 
-# Bắt đầu với healthcare data lakes: Sử dụng microservices
-
-**Quá trình hoàn thiện kiến trúc Serverless cho dự án GreenLens Kids qua những kinh nghiệm thực tế**
+# Quá trình hoàn thiện kiến trúc Serverless cho dự án GreenLens Kids qua những kinh nghiệm thực tế
 
 Chào mọi người, chúng mình là Nhóm We Are One tham gia chương trình First Cloud AI Journey của AWS. Hôm nay, mình muốn chia sẻ với cộng đồng một vài kinh nghiệm thực chiến khi thiết kế kiến trúc hệ thống cho GreenLens Kids. Đây là dự án nhóm mình xây dựng dựa trên AWS Serverless, ứng dụng AI và Gamification để hướng dẫn trẻ em phân loại rác.
 
@@ -42,3 +40,4 @@ Kiến trúc ban đầu của nhóm thiết lập các Lambda function khá rờ
 Trải qua quá trình liên tục rút kinh nghiệm, sửa chữa và hoàn thiện, cả team mới thực sự nhận ra rằng thiết kế architecture không chỉ đơn thuần là kết nối các service lại với nhau để đáp ứng đủ tính năng. Bài toán cốt lõi và cũng thách thức nhất luôn nằm ở việc tìm ra điểm trade-off hợp lý giữa trải nghiệm người dùng, khả năng tối ưu chi phí và giới hạn bảo mật của toàn hệ thống.
 
 Xin gửi lời cảm ơn chân thành đến ban tổ chức First Cloud AI Journey cùng các anh chị Mentor đã luôn tận tâm theo sát dự án. Những review khắt khe nhưng bám sát thực tế đã giúp nhóm củng cố nền tảng tư duy vững chắc, giúp tụi mình tự tin và sẵn sàng hơn cho các dự án thực tiễn sắp tới.
+![alt text](../architecture.png)
