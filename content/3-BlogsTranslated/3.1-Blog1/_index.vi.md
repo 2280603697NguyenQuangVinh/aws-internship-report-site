@@ -11,116 +11,34 @@ pre: " <b> 3.1. </b> "
 
 # Bắt đầu với healthcare data lakes: Sử dụng microservices
 
-Các data lake có thể giúp các bệnh viện và cơ sở y tế chuyển dữ liệu thành những thông tin chi tiết về doanh nghiệp và duy trì hoạt động kinh doanh liên tục, đồng thời bảo vệ quyền riêng tư của bệnh nhân. **Data lake** là một kho lưu trữ tập trung, được quản lý và bảo mật để lưu trữ tất cả dữ liệu của bạn, cả ở dạng ban đầu và đã xử lý để phân tích. data lake cho phép bạn chia nhỏ các kho chứa dữ liệu và kết hợp các loại phân tích khác nhau để có được thông tin chi tiết và đưa ra các quyết định kinh doanh tốt hơn.
+**Quá trình hoàn thiện kiến trúc Serverless cho dự án GreenLens Kids qua những kinh nghiệm thực tế**
 
-Bài đăng trên blog này là một phần của loạt bài lớn hơn về việc bắt đầu cài đặt data lake dành cho lĩnh vực y tế. Trong bài đăng blog cuối cùng của tôi trong loạt bài, *“Bắt đầu với data lake dành cho lĩnh vực y tế: Đào sâu vào Amazon Cognito”*, tôi tập trung vào các chi tiết cụ thể của việc sử dụng Amazon Cognito và Attribute Based Access Control (ABAC) để xác thực và ủy quyền người dùng trong giải pháp data lake y tế. Trong blog này, tôi trình bày chi tiết cách giải pháp đã phát triển ở cấp độ cơ bản, bao gồm các quyết định thiết kế mà tôi đã đưa ra và các tính năng bổ sung được sử dụng. Bạn có thể truy cập các code samples cho giải pháp tại Git repo này để tham khảo.
+Chào mọi người, chúng mình là Nhóm We Are One tham gia chương trình First Cloud AI Journey của AWS. Hôm nay, mình muốn chia sẻ với cộng đồng một vài kinh nghiệm thực chiến khi thiết kế kiến trúc hệ thống cho GreenLens Kids. Đây là dự án nhóm mình xây dựng dựa trên AWS Serverless, ứng dụng AI và Gamification để hướng dẫn trẻ em phân loại rác.
 
----
-
-## Hướng dẫn kiến trúc
-
-Thay đổi chính kể từ lần trình bày cuối cùng của kiến trúc tổng thể là việc tách dịch vụ đơn lẻ thành một tập hợp các dịch vụ nhỏ để cải thiện khả năng bảo trì và tính linh hoạt. Việc tích hợp một lượng lớn dữ liệu y tế khác nhau thường yêu cầu các trình kết nối chuyên biệt cho từng định dạng; bằng cách giữ chúng được đóng gói riêng biệt với microservices, chúng ta có thể thêm, xóa và sửa đổi từng trình kết nối mà không ảnh hưởng đến những kết nối khác. Các microservices được kết nối rời thông qua tin nhắn publish/subscribe tập trung trong cái mà tôi gọi là “pub/sub hub”.
-
-Giải pháp này đại diện cho những gì tôi sẽ coi là một lần lặp nước rút hợp lý khác từ last post của tôi. Phạm vi vẫn được giới hạn trong việc nhập và phân tích cú pháp đơn giản của các **HL7v2 messages** được định dạng theo **Quy tắc mã hóa 7 (ER7)** thông qua giao diện REST.
-
-**Kiến trúc giải pháp bây giờ như sau:**
-
-> *Hình 1. Kiến trúc tổng thể; những ô màu thể hiện những dịch vụ riêng biệt.*
+Dưới đây là những bài học cốt lõi nhóm đúc kết được sau các phiên technical review với ban cố vấn và tiến hành tinh chỉnh lại sơ đồ ban đầu.
 
 ---
 
-Mặc dù thuật ngữ *microservices* có một số sự mơ hồ cố hữu, một số đặc điểm là chung:  
-- Chúng nhỏ, tự chủ, kết hợp rời rạc  
-- Có thể tái sử dụng, giao tiếp thông qua giao diện được xác định rõ  
-- Chuyên biệt để giải quyết một việc  
-- Thường được triển khai trong **event-driven architecture**
+## 1. Rủi ro an ninh ẩn sau mục tiêu tối ưu hóa trải nghiệm
 
-Khi xác định vị trí tạo ranh giới giữa các microservices, cần cân nhắc:  
-- **Nội tại**: công nghệ được sử dụng, hiệu suất, độ tin cậy, khả năng mở rộng  
-- **Bên ngoài**: chức năng phụ thuộc, tần suất thay đổi, khả năng tái sử dụng  
-- **Con người**: quyền sở hữu nhóm, quản lý *cognitive load*
+Để các bé thao tác dễ dàng nhất, nhóm ban đầu quyết định bỏ qua bước đăng nhập. Tuy nhiên, các anh chị Mentor đã phân tích một lỗ hổng chí mạng. Việc thiếu đi cơ chế xác thực sẽ khiến các endpoint, đặc biệt là AI Camera, rất dễ bị lạm dụng hoặc gặp tình trạng tấn công từ chối dịch vụ. Hậu quả là dự án có thể cạn kiệt ngân sách tài nguyên AWS một cách nhanh chóng. Để khắc phục, nhóm đã triển khai Guest Access của AWS Cognito nhằm định danh thiết bị an toàn, kết hợp thêm AWS WAF phía sau API Gateway để kiểm soát lưu lượng và chặn các request độc hại.
 
 ---
 
-## Lựa chọn công nghệ và phạm vi giao tiếp
+## 2. Khắc phục sự phân mảnh trong quy hoạch luồng dữ liệu
 
-| Phạm vi giao tiếp                        | Các công nghệ / mô hình cần xem xét                                                        |
-| ---------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Trong một microservice                   | Amazon Simple Queue Service (Amazon SQS), AWS Step Functions                               |
-| Giữa các microservices trong một dịch vụ | AWS CloudFormation cross-stack references, Amazon Simple Notification Service (Amazon SNS) |
-| Giữa các dịch vụ                         | Amazon EventBridge, AWS Cloud Map, Amazon API Gateway                                      |
+Kiến trúc ban đầu của nhóm thiết lập các Lambda function khá rời rạc chỉ để kết nối với kho lưu trữ S3. Luồng quản trị hệ thống cũng bị tách biệt hoàn toàn khỏi cơ sở dữ liệu chung khiến tổng thể trở nên thiếu đồng bộ. Nhờ những đánh giá chuyên môn chi tiết, nhóm đã quy hoạch lại toàn bộ sơ đồ theo các tầng chuẩn chỉnh để dễ quản lý và mở rộng hơn, bao gồm Presentation Layer, API Layer, Application Layer, Data Layer và External AI Services.
 
 ---
 
-## The pub/sub hub
+## 3. Hiểu đúng về cơ chế điều phối của các dịch vụ AWS
 
-Việc sử dụng kiến trúc **hub-and-spoke** (hay message broker) hoạt động tốt với một số lượng nhỏ các microservices liên quan chặt chẽ.  
-- Mỗi microservice chỉ phụ thuộc vào *hub*  
-- Kết nối giữa các microservice chỉ giới hạn ở nội dung của message được xuất  
-- Giảm số lượng synchronous calls vì pub/sub là *push* không đồng bộ một chiều
-
-Nhược điểm: cần **phối hợp và giám sát** để tránh microservice xử lý nhầm message.
+Ở phiên bản sơ khai, nhóm đã thiết kế luồng xử lý để Amazon Rekognition và Amazon Bedrock tự động tương tác trực tiếp với nhau, đồng thời đặt thêm Amazon ElastiCache vào luồng một cách thiếu hợp lý. Sau khi nghiên cứu kỹ lại tài liệu kỹ thuật, nhóm quyết định tinh gọn toàn bộ hệ thống. AWS Lambda được đưa về đúng bản chất của một kiến trúc Serverless hướng sự kiện, đóng vai trò trung tâm điều phối logic giữa ứng dụng và các dịch vụ AI bên ngoài.
 
 ---
 
-## Core microservice
+## Bài học rút ra và kết luận
 
-Cung cấp dữ liệu nền tảng và lớp truyền thông, gồm:  
-- **Amazon S3** bucket cho dữ liệu  
-- **Amazon DynamoDB** cho danh mục dữ liệu  
-- **AWS Lambda** để ghi message vào data lake và danh mục  
-- **Amazon SNS** topic làm *hub*  
-- **Amazon S3** bucket cho artifacts như mã Lambda
+Trải qua quá trình liên tục rút kinh nghiệm, sửa chữa và hoàn thiện, cả team mới thực sự nhận ra rằng thiết kế architecture không chỉ đơn thuần là kết nối các service lại với nhau để đáp ứng đủ tính năng. Bài toán cốt lõi và cũng thách thức nhất luôn nằm ở việc tìm ra điểm trade-off hợp lý giữa trải nghiệm người dùng, khả năng tối ưu chi phí và giới hạn bảo mật của toàn hệ thống.
 
-> Chỉ cho phép truy cập ghi gián tiếp vào data lake qua hàm Lambda → đảm bảo nhất quán.
-
----
-
-## Front door microservice
-
-- Cung cấp API Gateway để tương tác REST bên ngoài  
-- Xác thực & ủy quyền dựa trên **OIDC** thông qua **Amazon Cognito**  
-- Cơ chế *deduplication* tự quản lý bằng DynamoDB thay vì SNS FIFO vì:
-  1. SNS deduplication TTL chỉ 5 phút
-  2. SNS FIFO yêu cầu SQS FIFO
-  3. Chủ động báo cho sender biết message là bản sao
-
----
-
-## Staging ER7 microservice
-
-- Lambda “trigger” đăng ký với pub/sub hub, lọc message theo attribute  
-- Step Functions Express Workflow để chuyển ER7 → JSON  
-- Hai Lambda:
-  1. Sửa format ER7 (newline, carriage return)
-  2. Parsing logic  
-- Kết quả hoặc lỗi được đẩy lại vào pub/sub hub
-
----
-
-## Tính năng mới trong giải pháp
-
-### 1. AWS CloudFormation cross-stack references
-Ví dụ *outputs* trong core microservice:
-```yaml
-Outputs:
-  Bucket:
-    Value: !Ref Bucket
-    Export:
-      Name: !Sub ${AWS::StackName}-Bucket
-  ArtifactBucket:
-    Value: !Ref ArtifactBucket
-    Export:
-      Name: !Sub ${AWS::StackName}-ArtifactBucket
-  Topic:
-    Value: !Ref Topic
-    Export:
-      Name: !Sub ${AWS::StackName}-Topic
-  Catalog:
-    Value: !Ref Catalog
-    Export:
-      Name: !Sub ${AWS::StackName}-Catalog
-  CatalogArn:
-    Value: !GetAtt Catalog.Arn
-    Export:
-      Name: !Sub ${AWS::StackName}-CatalogArn
+Xin gửi lời cảm ơn chân thành đến ban tổ chức First Cloud AI Journey cùng các anh chị Mentor đã luôn tận tâm theo sát dự án. Những review khắt khe nhưng bám sát thực tế đã giúp nhóm củng cố nền tảng tư duy vững chắc, giúp tụi mình tự tin và sẵn sàng hơn cho các dự án thực tiễn sắp tới.

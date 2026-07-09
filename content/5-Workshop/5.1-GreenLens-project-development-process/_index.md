@@ -15,7 +15,6 @@ The GreenLens project was developed by a team of four members. I served as the t
 This section summarizes the project development process and team workflow used during the GreenLens project. It is structured as a report-style chapter so it can be inserted into the Workshop content consistently.
 
 #### Content
-
 1. [Introduction](#1-introduction)
 2. [Project Preparation](#2-project-preparation)
 3. [Task Planning and Work Organization](#3-task-planning-and-work-organization)
@@ -90,5 +89,4 @@ The project documentation, source code repository, and task history were kept or
 
 Overall, the GreenLens project was completed through a clear and well-organized workflow. The team worked with defined responsibilities, maintained consistent communication, and used Jira and GitHub effectively to manage tasks and source code. As a result, the project was developed successfully within the planned timeline from June 1, 2026 to July 6, 2026.
 
-GitHub: [Insert GitHub link here]
-Jira: [Insert Jira link here]
+GitHub: [https://github.com/2280603697NguyenQuangVinh/Greenlens]

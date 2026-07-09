@@ -10,118 +10,22 @@ pre: " <b> 3.3. </b> "
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
 
-# Bắt đầu với healthcare data lakes: Sử dụng microservices
+# Tổng kết hành trình xây dựng GreenLens Kids cùng First Cloud AI Journey
 
-Các data lake có thể giúp các bệnh viện và cơ sở y tế chuyển dữ liệu thành những thông tin chi tiết về doanh nghiệp và duy trì hoạt động kinh doanh liên tục, đồng thời bảo vệ quyền riêng tư của bệnh nhân. **Data lake** là một kho lưu trữ tập trung, được quản lý và bảo mật để lưu trữ tất cả dữ liệu của bạn, cả ở dạng ban đầu và đã xử lý để phân tích. data lake cho phép bạn chia nhỏ các kho chứa dữ liệu và kết hợp các loại phân tích khác nhau để có được thông tin chi tiết và đưa ra các quyết định kinh doanh tốt hơn.
+Chào mọi người, chúng mình là sinh viên CNTT từ HUTECH và VJIT, hiện đang tham gia chương trình First Cloud AI Journey. Qua hai bài viết trước, chúng mình đã chia sẻ chi tiết về quá trình tối ưu kiến trúc serverless và những kinh nghiệm khi xây dựng tầng ứng dụng. Ở bài blog thứ ba này, tụi mình muốn đúc kết lại toàn bộ chặng đường vừa qua và những giá trị cốt lõi mà nhóm đã tích lũy được từ lúc bắt đầu cho đến khi dự án hình thành.
 
-Bài đăng trên blog này là một phần của loạt bài lớn hơn về việc bắt đầu cài đặt data lake dành cho lĩnh vực y tế. Trong bài đăng blog cuối cùng của tôi trong loạt bài, *“Bắt đầu với data lake dành cho lĩnh vực y tế: Đào sâu vào Amazon Cognito”*, tôi tập trung vào các chi tiết cụ thể của việc sử dụng Amazon Cognito và Attribute Based Access Control (ABAC) để xác thực và ủy quyền người dùng trong giải pháp data lake y tế. Trong blog này, tôi trình bày chi tiết cách giải pháp đã phát triển ở cấp độ cơ bản, bao gồm các quyết định thiết kế mà tôi đã đưa ra và các tính năng bổ sung được sử dụng. Bạn có thể truy cập các code samples cho giải pháp tại Git repo này để tham khảo.
+## 1. Tư duy hệ thống quyết định chất lượng sản phẩm
 
----
+Nhìn lại toàn bộ dự án, tụi mình nhận thấy một sơ đồ kiến trúc dù hoàn chỉnh đến đâu cũng sẽ trở nên vô nghĩa nếu thiếu đi năng lực triển khai. Những tính năng bảo mật hệ thống như AWS Cognito hay Web Application Firewall chỉ thực sự phát huy tác dụng khi nhóm nắm vững cách phân quyền IAM, quản lý biến môi trường an toàn và kiểm soát tốt tài nguyên sử dụng. Việc kết nối chặt chẽ giữa tư duy thiết kế tổng thể và kỹ năng lập trình chi tiết chính là chìa khóa giúp GreenLens Kids vận hành trơn tru và tối ưu chi phí.
 
-## Hướng dẫn kiến trúc
+## 2. Rèn luyện sự nhạy bén khi xử lý sự cố
 
-Thay đổi chính kể từ lần trình bày cuối cùng của kiến trúc tổng thể là việc tách dịch vụ đơn lẻ thành một tập hợp các dịch vụ nhỏ để cải thiện khả năng bảo trì và tính linh hoạt. Việc tích hợp một lượng lớn dữ liệu y tế khác nhau thường yêu cầu các trình kết nối chuyên biệt cho từng định dạng; bằng cách giữ chúng được đóng gói riêng biệt với microservices, chúng ta có thể thêm, xóa và sửa đổi từng trình kết nối mà không ảnh hưởng đến những kết nối khác. Các microservices được kết nối rời thông qua tin nhắn publish/subscribe tập trung trong cái mà tôi gọi là “pub/sub hub”.
+Quá trình làm dự án mang lại cho nhóm rất nhiều bài học đắt giá qua những sự cố nằm ngoài dự tính. Từ việc xử lý tình huống cạn kiệt credit phải cấu hình lại môi trường cloud sang tài khoản mới, thiết lập mạng Docker để chạy DynamoDB nội bộ, cho đến những lúc cùng team frontend rà soát nguyên nhân không đồng bộ dữ liệu, chính những rào cản kỹ thuật này đã ép cả đội phải làm quen với việc đọc log hệ thống, khoanh vùng lỗi nhanh chóng và đưa ra giải pháp khắc phục triệt để.
 
-Giải pháp này đại diện cho những gì tôi sẽ coi là một lần lặp nước rút hợp lý khác từ last post của tôi. Phạm vi vẫn được giới hạn trong việc nhập và phân tích cú pháp đơn giản của các **HL7v2 messages** được định dạng theo **Quy tắc mã hóa 7 (ER7)** thông qua giao diện REST.
+## 3. Trưởng thành nhờ những đánh giá chuyên môn
 
-**Kiến trúc giải pháp bây giờ như sau:**
+Dự án chắc chắn sẽ không thể hoàn thiện nếu thiếu đi sự định hướng từ ban cố vấn. Những lời nhận xét nghiêm khắc, đi thẳng vào vấn đề của các mentor đã giúp nhóm thay đổi hoàn toàn cách tiếp cận công nghệ. Tụi mình rèn luyện được thói quen không bao giờ thỏa hiệp với rủi ro bảo mật, đồng thời luôn đặt bài toán chi phí lên bàn cân trước khi quyết định tích hợp bất kỳ dịch vụ mới nào vào hệ thống.
 
-> *Hình 1. Kiến trúc tổng thể; những ô màu thể hiện những dịch vụ riêng biệt.*
+## Kết luận
 
----
-
-Mặc dù thuật ngữ *microservices* có một số sự mơ hồ cố hữu, một số đặc điểm là chung:  
-- Chúng nhỏ, tự chủ, kết hợp rời rạc  
-- Có thể tái sử dụng, giao tiếp thông qua giao diện được xác định rõ  
-- Chuyên biệt để giải quyết một việc  
-- Thường được triển khai trong **event-driven architecture**
-
-Khi xác định vị trí tạo ranh giới giữa các microservices, cần cân nhắc:  
-- **Nội tại**: công nghệ được sử dụng, hiệu suất, độ tin cậy, khả năng mở rộng  
-- **Bên ngoài**: chức năng phụ thuộc, tần suất thay đổi, khả năng tái sử dụng  
-- **Con người**: quyền sở hữu nhóm, quản lý *cognitive load*
-
----
-
-## Lựa chọn công nghệ và phạm vi giao tiếp
-
-| Phạm vi giao tiếp                        | Các công nghệ / mô hình cần xem xét                                                        |
-| ---------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Trong một microservice                   | Amazon Simple Queue Service (Amazon SQS), AWS Step Functions                               |
-| Giữa các microservices trong một dịch vụ | AWS CloudFormation cross-stack references, Amazon Simple Notification Service (Amazon SNS) |
-| Giữa các dịch vụ                         | Amazon EventBridge, AWS Cloud Map, Amazon API Gateway                                      |
-
----
-
-## The pub/sub hub
-
-Việc sử dụng kiến trúc **hub-and-spoke** (hay message broker) hoạt động tốt với một số lượng nhỏ các microservices liên quan chặt chẽ.  
-- Mỗi microservice chỉ phụ thuộc vào *hub*  
-- Kết nối giữa các microservice chỉ giới hạn ở nội dung của message được xuất  
-- Giảm số lượng synchronous calls vì pub/sub là *push* không đồng bộ một chiều
-
-Nhược điểm: cần **phối hợp và giám sát** để tránh microservice xử lý nhầm message.
-
----
-
-## Core microservice
-
-Cung cấp dữ liệu nền tảng và lớp truyền thông, gồm:  
-- **Amazon S3** bucket cho dữ liệu  
-- **Amazon DynamoDB** cho danh mục dữ liệu  
-- **AWS Lambda** để ghi message vào data lake và danh mục  
-- **Amazon SNS** topic làm *hub*  
-- **Amazon S3** bucket cho artifacts như mã Lambda
-
-> Chỉ cho phép truy cập ghi gián tiếp vào data lake qua hàm Lambda → đảm bảo nhất quán.
-
----
-
-## Front door microservice
-
-- Cung cấp API Gateway để tương tác REST bên ngoài  
-- Xác thực & ủy quyền dựa trên **OIDC** thông qua **Amazon Cognito**  
-- Cơ chế *deduplication* tự quản lý bằng DynamoDB thay vì SNS FIFO vì:
-  1. SNS deduplication TTL chỉ 5 phút
-  2. SNS FIFO yêu cầu SQS FIFO
-  3. Chủ động báo cho sender biết message là bản sao
-
----
-
-## Staging ER7 microservice
-
-- Lambda “trigger” đăng ký với pub/sub hub, lọc message theo attribute  
-- Step Functions Express Workflow để chuyển ER7 → JSON  
-- Hai Lambda:
-  1. Sửa format ER7 (newline, carriage return)
-  2. Parsing logic  
-- Kết quả hoặc lỗi được đẩy lại vào pub/sub hub
-
----
-
-## Tính năng mới trong giải pháp
-
-### 1. AWS CloudFormation cross-stack references
-Ví dụ *outputs* trong core microservice:
-```yaml
-Outputs:
-  Bucket:
-    Value: !Ref Bucket
-    Export:
-      Name: !Sub ${AWS::StackName}-Bucket
-  ArtifactBucket:
-    Value: !Ref ArtifactBucket
-    Export:
-      Name: !Sub ${AWS::StackName}-ArtifactBucket
-  Topic:
-    Value: !Ref Topic
-    Export:
-      Name: !Sub ${AWS::StackName}-Topic
-  Catalog:
-    Value: !Ref Catalog
-    Export:
-      Name: !Sub ${AWS::StackName}-Catalog
-  CatalogArn:
-    Value: !GetAtt Catalog.Arn
-    Export:
-      Name: !Sub ${AWS::StackName}-CatalogArn
+Chương trình First Cloud AI Journey đã khép lại nhưng những trải nghiệm thu về thực sự là một hành trang quý giá. Nhóm đã có cơ hội trải qua một quy trình làm sản phẩm đầy đủ, từ khâu phác thảo sơ đồ, bảo mật hệ thống, xử lý lỗi hạ tầng cho đến tích hợp AI để hoàn thiện ứng dụng. Xin cảm ơn ban tổ chức, các mentor và toàn thể đồng đội đã cùng nhau nỗ lực vượt qua vô vàn thử thách kỹ thuật để đưa GreenLens Kids đến vạch đích.
