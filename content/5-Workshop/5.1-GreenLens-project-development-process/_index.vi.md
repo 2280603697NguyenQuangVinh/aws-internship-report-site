@@ -8,7 +8,7 @@ pre: " <b> 5.1. </b> "
 
 #### Tổng quan
 
-Dự án GreenLens được phát triển bởi một nhóm bốn thành viên. Tôi giữ vai trò trưởng nhóm và phụ trách backend development, core business logic, quản lý tài khoản AWS, cấu hình các dịch vụ AWS, và triển khai hệ thống lên AWS. Phuc và Hieu phụ trách frontend development.
+Dự án GreenLens được phát triển bởi một nhóm bốn thành viên. Tôi giữ vai trò trưởng nhóm và phụ trách backend development, core business logic, quản lý tài khoản AWS, cấu hình các dịch vụ AWS, và triển khai hệ thống lên AWS. Lợi cũng tham gia vào phần backend, còn Phuc và Hieu phụ trách frontend development.
 
 #### Lưu ý
 
@@ -35,7 +35,7 @@ GreenLens là một dự án được xây dựng theo mô hình làm việc nh�
 
 Ngay từ đầu dự án, nhóm đã cùng xem xét yêu cầu và thảo luận về định hướng tổng thể của website. Giai đoạn chuẩn bị này giúp chúng tôi xác định phạm vi công việc, hiểu rõ chức năng cần xây dựng và thống nhất cách làm trước khi bước vào triển khai.
 
-- Backend development, business logic, quản lý AWS và triển khai được giao cho tôi.
+- Backend development, business logic, quản lý AWS và triển khai được giao cho tôi và Lợi.
 - Frontend development được giao cho Phuc và Hieu.
 - Tất cả công việc đều được tạo và theo dõi trên Jira.
 - Mã nguồn được quản lý trên GitHub để hỗ trợ cộng tác và kiểm soát phiên bản.
@@ -56,7 +56,7 @@ Trong giai đoạn này, nhóm chú ý đến tính dễ sử dụng và tính n
 
 ## 5. Phát triển Backend
 
-Ở phía backend, tôi phát triển phần logic cốt lõi của dự án và triển khai các API mà frontend sử dụng. Công việc này bao gồm xử lý business rules, tiếp nhận request, trả response và đảm bảo luồng dữ liệu giữa client và server luôn chính xác, ổn định.
+Ở phía backend, Lợi và tôi phát triển phần logic cốt lõi của dự án và triển khai các API mà frontend sử dụng. Công việc này bao gồm xử lý business rules, tiếp nhận request, trả response và đảm bảo luồng dữ liệu giữa client và server luôn chính xác, ổn định.
 
 Ngoài logic ứng dụng, tôi còn quản lý tài khoản AWS và cấu hình các dịch vụ AWS cần thiết cho dự án. Điều này giúp backend có thể được triển khai và vận hành trong một môi trường cloud ổn định.
 
