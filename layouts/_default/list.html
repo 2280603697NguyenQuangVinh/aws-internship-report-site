@@ -2,15 +2,6 @@
 
 {{ if eq .Kind "section" }}
     {{ .Content }}
-    {{ if .Translations }}
-        {{ range .Translations }}
-            <hr class="section-translation-divider" />
-            <section class="section-translation">
-                <h2>{{ if eq .Lang "vi" }}Tiếng Việt{{ else if eq .Lang "en" }}English{{ else }}{{ .LanguageName }}{{ end }}</h2>
-                {{ .Content }}
-            </section>
-        {{ end }}
-    {{ end }}
 {{ end }}
 
 {{ if or (eq .Kind "taxonomy") (eq .Kind "taxonomyTerm") }}
