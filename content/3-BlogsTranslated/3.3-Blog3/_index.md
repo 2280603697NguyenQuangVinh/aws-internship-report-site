@@ -6,10 +6,6 @@ chapter: false
 pre: " <b> 3.3. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
-
 # Summarizing the Journey of Building GreenLens Kids with First Cloud AI Journey
 
 Hello everyone, we are IT students from HUTECH and VJIT, and we are currently participating in the First Cloud AI Journey program. Through the first two articles, we shared detailed experiences about optimizing the serverless architecture and the lessons we learned while building the application layer. In this third blog post, we would like to summarize the entire journey so far and the core values our team gained from the beginning until the project took shape.

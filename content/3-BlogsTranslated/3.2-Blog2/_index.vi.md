@@ -6,10 +6,6 @@ chapter: false
 pre: " <b> 3.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 # Hành trình phát triển tầng ứng dụng Cloud cùng First Cloud AI Journey
 
 Dù đã được trang bị nền tảng công nghệ thông tin từ chương trình đào tạo tại trường, việc đối mặt với bài toán triển khai một hệ thống serverless trên môi trường AWS vẫn mang lại vô vàn bỡ ngỡ. Nhờ tham gia chương trình First Cloud AI Journey, nhóm We Are One chúng mình mới có cơ hội chuyển từ những mớ lý thuyết khô khan trên giảng đường sang việc làm một dự án cloud thực tế với nhiều bài toán hóc búa.

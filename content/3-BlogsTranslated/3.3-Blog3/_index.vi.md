@@ -6,10 +6,6 @@ chapter: false
 pre: " <b> 3.3. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 # Tổng kết hành trình xây dựng GreenLens Kids cùng First Cloud AI Journey
 
 Chào mọi người, chúng mình là sinh viên CNTT từ HUTECH và VJIT, hiện đang tham gia chương trình First Cloud AI Journey. Qua hai bài viết trước, chúng mình đã chia sẻ chi tiết về quá trình tối ưu kiến trúc serverless và những kinh nghiệm khi xây dựng tầng ứng dụng. Ở bài blog thứ ba này, tụi mình muốn đúc kết lại toàn bộ chặng đường vừa qua và những giá trị cốt lõi mà nhóm đã tích lũy được từ lúc bắt đầu cho đến khi dự án hình thành.

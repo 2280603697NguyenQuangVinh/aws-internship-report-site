@@ -5,10 +5,6 @@ weight: 1
 chapter: false
 pre: " <b> 3.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 # Quá trình hoàn thiện kiến trúc Serverless cho dự án GreenLens Kids qua những kinh nghiệm thực tế
 
 Chào mọi người, chúng mình là Nhóm We Are One tham gia chương trình First Cloud AI Journey của AWS. Hôm nay, mình muốn chia sẻ với cộng đồng một vài kinh nghiệm thực chiến khi thiết kế kiến trúc hệ thống cho GreenLens Kids. Đây là dự án nhóm mình xây dựng dựa trên AWS Serverless, ứng dụng AI và Gamification để hướng dẫn trẻ em phân loại rác.

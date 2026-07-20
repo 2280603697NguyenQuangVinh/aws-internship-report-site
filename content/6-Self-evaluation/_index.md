@@ -6,10 +6,6 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
-
 During my internship at Amazon Web Services Vietnam from 18/04/2026 to 10/07/2026, I had the opportunity to work in a practical professional environment and apply the knowledge I had learned at university to real-world tasks.
 
 During this internship, I took on the roles of **team leader** and **backend developer** in the project. My responsibilities included coordinating team activities, supporting task planning and progress tracking, discussing technical solutions with team members, and directly developing backend features and APIs for the system. Through this experience, I improved not only my technical knowledge in backend development, system design, API integration, and database handling, but also my skills in teamwork, communication, task management, problem solving, and leadership.

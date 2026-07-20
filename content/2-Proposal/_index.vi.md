@@ -5,10 +5,6 @@ weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo. Vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn, kể cả phần cảnh báo này.
-{{% /notice %}}
-
 Tại phần này, bạn cần tóm tắt nội dung của workshop mà bạn dự định sẽ tổ chức.
 
 # GreenLens Kids

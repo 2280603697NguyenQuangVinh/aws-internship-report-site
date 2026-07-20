@@ -6,10 +6,6 @@ chapter: false
 pre: " <b> 3.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
-
 # Building the Cloud Application Layer with First Cloud AI Journey
 
 Although we already had an information technology foundation from our university training, facing the challenge of deploying a serverless system on AWS still felt unfamiliar and difficult. Through the First Cloud AI Journey program, our team, We Are One, had the opportunity to move from dry classroom theory to a real cloud project with many challenging problems.

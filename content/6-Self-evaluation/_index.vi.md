@@ -6,10 +6,6 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 Trong thời gian thực tập tại Amazon Web Services (AWS) Vietnam từ 18/04/2026 đến 10/07/2026, em đã có cơ hội làm việc trong một môi trường chuyên nghiệp, đồng thời áp dụng những kiến thức đã được học tại trường vào các công việc thực tế.
 
 Trong quá trình thực tập, em đảm nhận vai trò Trưởng nhóm (Team Leader) và Lập trình viên Backend (Backend Developer) của dự án. Nhiệm vụ của em bao gồm điều phối các hoạt động của nhóm, hỗ trợ lập kế hoạch và theo dõi tiến độ công việc, trao đổi các giải pháp kỹ thuật với các thành viên, đồng thời trực tiếp phát triển các chức năng backend và API cho hệ thống. Thông qua quá trình này, em không chỉ nâng cao kiến thức chuyên môn về phát triển backend, thiết kế hệ thống, tích hợp API và quản lý cơ sở dữ liệu, mà còn rèn luyện các kỹ năng làm việc nhóm, giao tiếp, quản lý công việc, giải quyết vấn đề và kỹ năng lãnh đạo.
