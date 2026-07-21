@@ -1,27 +1,23 @@
 ---
-title: "Translated Blogs"
-date: 2024-01-01
+title: "Blogs Posted"
+date: 2026-07-01
 weight: 3
 chapter: false
 pre: " <b> 3. </b> "
 ---
 
-This section will list and introduce the blogs you have translated. For example:
+This section lists and introduces the three blog posts completed during the internship. These blogs summarize our practical experience while developing the GreenLens Kids project in the First Cloud AI Journey program, with a focus on AWS Serverless architecture, cloud application development, AI integration, and lessons learned from real project implementation.
 
-###  [Blog 1 - Getting started with healthcare data lakes: Using microservices](3.1-Blog1/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
+Through these blog posts, our team documented the process of improving the system architecture, building the application layer, solving technical issues, and reflecting on the overall development journey of GreenLens Kids.
 
-###  [Blog 2 - ...](3.2-Blog2/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
+### [Blog 1 - Refining the Serverless Architecture for GreenLens Kids through Practical Experience](3.1-Blog1/)
 
-###  [Blog 3 - ...](3.3-Blog3/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
+This blog presents the process of refining the Serverless architecture for the GreenLens Kids project based on practical experience and mentor feedback. It discusses important lessons such as balancing user experience with security, applying AWS Cognito Guest Access and AWS WAF to protect the system, restructuring the architecture into clearer layers, and using AWS Lambda as the central logic coordinator in a Serverless event-driven design.
 
-###  [Blog 4 - ...](3.4-Blog4/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
+### [Blog 2 - Building the Cloud Application Layer with First Cloud AI Journey](3.2-Blog2/)
 
-###  [Blog 5 - ...](3.5-Blog5/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
+This blog focuses on the journey of building the cloud application layer for GreenLens Kids. It describes how our team moved from basic AWS learning to practical implementation, including setting up AWS resources, practicing with AWS SimuLearn labs, working with FastAPI, Docker, DynamoDB Local, Boto3, IAM permissions, and handling real project incidents such as infrastructure migration and API errors. The blog also highlights how AI services and the Web Speech API were integrated to improve the user experience for children.
 
-###  [Blog 6 - ...](3.6-Blog6/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
+### [Blog 3 - Summarizing the Journey of Building GreenLens Kids with First Cloud AI Journey](3.3-Blog3/)
+
+This blog summarizes the overall journey of building GreenLens Kids during the First Cloud AI Journey program. It reflects on the importance of systems thinking, security awareness, cost optimization, incident handling, and professional feedback from mentors. Through this blog, our team reviewed the key lessons learned from designing the architecture, handling infrastructure issues, integrating AI features, and completing the project as a practical cloud-based product.
